@@ -27,26 +27,27 @@ const Navbar_content = [
     title: "Policy",
     link: "/policy",
   },
-  {
-    title: "Fees Particulars",
-    link: "/fees",
-  },
-  {
-    title: "Journals",
-    link: "/journals",
-  },
-  {
-    title: "Plagiarism",
-    link: "/plagiarism",
-  },
-  {
-    title: "Downloads",
-    link: "/downloads",
-  },
-  {
-    title: "Contact Us",
-    link: "/contactUs",
-  },
 ];
 
-export { Navbar_content };
+const Navbar_more = [{
+  title: "Fees Particulars",
+  link: "/fees",
+},
+{
+  title: "Journals",
+  link: "/journals",
+},
+{
+  title: "Plagiarism",
+  link: "/plagiarism",
+},
+{
+  title: "Downloads",
+  link: "/downloads",
+},
+{
+  title: "Contact Us",
+  link: "/contactUs",
+},]
+
+export { Navbar_content,Navbar_more };

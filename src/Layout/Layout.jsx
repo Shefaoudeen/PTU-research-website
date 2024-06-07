@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <Banner />
+      <Banner title={"Directorate of Academic Research"} desc = {"Puducherry Technological University ,"} additional={"Puducherry- 605014"}/>
       <Outlet />
       <Footer />
     </>
