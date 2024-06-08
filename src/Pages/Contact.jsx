@@ -17,7 +17,7 @@ const Contact = () => {
           return (
             <div
               key={index}
-              className={`flex flex-wrap items-center gap-16 justify-center md:justify-start md:pl-40 py-8 bg-[${faculty.bgColor}]`}
+              className={`flex flex-wrap items-center gap-16 justify-center md:justify-start pl-4 md:pl-40 py-8 bg-[${faculty.bgColor}]`}
             >
               <div>
                 <img
