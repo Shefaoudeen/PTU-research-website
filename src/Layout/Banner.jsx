@@ -12,11 +12,11 @@ const Banner = ({title,desc,additional}) => {
         <div className="flex items-center justify-between h-full  py-5 px-12">
           <div><img className="w-40" src={ptuLogo}></img></div>
           <div className=" flex flex-col items-center gap-4 text-4xl px-10">
-            <h1 className="text-blue-300 font-semibold">{title}</h1>
+            <h1 className="text-blue-300 text-center font-semibold">{title}</h1>
             <h1 className="text-wrap text-2xl text-white">{desc}</h1>
             <h1 className="text-wrap text-2xl text-white">{additional}</h1>
           </div>
-          <div className="w-40 hidden lg:block"></div>
+          <div className="lg:w-20 xl:w-40 hidden lg:block"></div>
         </div>
 
       </div>
