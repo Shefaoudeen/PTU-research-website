@@ -59,11 +59,11 @@ const Navbar = () => {
       >
         {Navbar_more.map((item, i) => {
           return (
-            <Link to={item.link} key={i}>
-              <button className="px-4 py-2 hover:scale-110 font-extralight transition-all duration-300">
+            <NavLink to={item.link} key={i}>
+              <button className="px-4 py-2 hover:scale-110  transition-all duration-300">
                 {item.title}
               </button>
-            </Link>
+            </NavLink>
           );
         })}
       </div>
