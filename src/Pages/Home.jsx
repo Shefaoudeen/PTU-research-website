@@ -9,7 +9,7 @@ const Home = () => {
         desc={"Puducherry Technological University ,"}
         additional={"Puducherry- 605014"}
       />
-      <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center w-full overflow-hidden">
         <h1 className="text-4xl py-8">
           Warm Welcome to the Directorate of Academic Research
         </h1>
