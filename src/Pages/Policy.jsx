@@ -7,7 +7,7 @@ const Policy = () => {
       {" "}
       <Banner
         title={"Directorate of Academic Research"}
-        desc={"Policy"}
+        desc={"Research Promotion Policy"}
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
