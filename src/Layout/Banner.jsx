@@ -6,7 +6,7 @@ const Banner = (props) => {
   return (
     <>
       <div
-        className="h-[50vh] md:h-[40vh] bg-no-repeat bg-cover"
+        className="md:h-[40vh] bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${bannerBG})` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-evenly md:justify-between h-full  py-5 sm:px-12">
