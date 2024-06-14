@@ -30,14 +30,14 @@ const Supervisors1 = () => {
           </h1>
         </div>
         {/* accordian section */}
-        <div className="w-[80vw] m-auto">
+        <div className="w-[75vw] m-auto py-5">
           {Supervisors_dept.map((ele) => {
             return (
-              <div
-                className="border-[#1e6c93] border-b-2 cursor-pointer"
-                onClick={() => handleOnClick(ele.id)}
-              >
-                <div className="flex justify-between items-center">
+              <div className="border-[#1e6c93] border-b-2 py-2">
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={() => handleOnClick(ele.id)}
+                >
                   <h1 className="text-[#1e6c93] font-semibold text-xl py-5">
                     {ele.dept}
                   </h1>
@@ -46,7 +46,7 @@ const Supervisors1 = () => {
                 <div className="flex w-full justify-center">
                   {accordionOpen === ele.id ? (
                     <div className="w-full text-center flex flex-col justify-center">
-                      <h1>
+                      <h1 className="text-xl font-semibold py-4">
                         Recognized Supervisors from PTU with specialization
                       </h1>
                       <div className="px-2 flex justify-center w-full">
@@ -55,9 +55,15 @@ const Supervisors1 = () => {
                             return (
                               <tr className="bg-slate-100">
                                 <th className="font-normal">{index + 1}</th>
-                                <th className="font-normal">{staff.faculty}</th>
-                                <th className="font-normal">{staff.role}</th>
-                                <th className="font-normal">{staff.areas}</th>
+                                <th className="font-normal w-[17vw]">
+                                  {staff.faculty}
+                                </th>
+                                <th className="font-normal w-[17vw]">
+                                  {staff.role}
+                                </th>
+                                <th className="font-normal w-[40vw]">
+                                  {staff.areas}
+                                </th>
                               </tr>
                             );
                           })}
@@ -66,25 +72,25 @@ const Supervisors1 = () => {
                       <div className="w-full text-center flex flex-col justify-center">
                         {ele.pkiet_status ? (
                           <div className="w-full text-center flex flex-col justify-center">
-                            <h1>
+                            <h1 className="text-xl font-semibold py-4">
                               Recognized Supervisors from PKIET with
                               specialization
                             </h1>
                             <div className="px-2 flex justify-center w-full">
-                              <table className="border-separate border-spacing-3">
+                              <table className="border-separate border-spacing-3 w-full">
                                 {ele.pkiet.map((staff, index) => {
                                   return (
                                     <tr className="bg-slate-100">
                                       <th className="font-normal">
                                         {index + 1}
                                       </th>
-                                      <th className="font-normal">
+                                      <th className="font-normal w-[17vw]">
                                         {staff.faculty}
                                       </th>
-                                      <th className="font-normal">
+                                      <th className="font-normal w-[17vw]">
                                         {staff.role}
                                       </th>
-                                      <th className="font-normal">
+                                      <th className="font-normal w-[40vw]">
                                         {staff.areas}
                                       </th>
                                     </tr>
