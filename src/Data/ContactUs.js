@@ -16,7 +16,7 @@ const contact_Details = [
     profile: pic1,
     designation: "Associate Director (Research)",
     clgName: "Puducherry Technological University",
-    bgColor: "#F1F5F9",
+    bgColor: "#88888",
     textColor: "black",
   },
   {
@@ -24,6 +24,7 @@ const contact_Details = [
     profile: pic2,
     designation: "Associate Director (Research)",
     clgName: "Puducherry Technological University",
+    bgColor: "#00000",
     textColor: "black",
   },
 ];

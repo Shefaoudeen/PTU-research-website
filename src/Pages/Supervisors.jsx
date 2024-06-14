@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../Layout/Banner";
-import arrowIcon from "../assets/Images/icons/arrow-icon.svg";
+import arrowIcon from "../assets/icons/arrow-icon.svg";
 
 const Supervisors = () => {
   const [accordionOpen, setAccordionOpen] = useState(0);

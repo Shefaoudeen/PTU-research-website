@@ -3,6 +3,7 @@ import { Navbar_content, Navbar_more } from "../Data/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import arrowIcon from '../assets/icons/arrow-icon.svg'
 
 const Navbar = () => {
   const [moreOpen, setMoreOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
         >
           <div
             className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "rotate-45 translate-y-1.5" : ""
+              menuOpen ? "rotate-[135deg] translate-y-1.5" : ""
             }`}
           ></div>
           <div
@@ -33,7 +34,7 @@ const Navbar = () => {
           ></div>
           <div
             className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-2.5" : ""
+              menuOpen ? "-rotate-[135deg] -translate-y-2.5" : ""
             }`}
           ></div>
         </div>
@@ -53,32 +54,7 @@ const Navbar = () => {
             >
               {" "}
               <h2>More</h2>{" "}
-              <svg
-                className={`duration-200 ${moreOpen ? "rotate-180" : ""}`}
-                fill="#000000"
-                height="15px"
-                width="15px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 330 330"
-                xml:space="preserve"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {" "}
-                  <path
-                    id="XMLID_225_"
-                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
-                  ></path>{" "}
-                </g>
-              </svg>
+              <img className={`w-4 duration-300 ${moreOpen? "rotate-180" : ""}`} src={arrowIcon}></img>
             </div>
           </div>
           <div
@@ -101,15 +77,16 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* for smaller screens */}
       <div
         id="menuBar"
         className={`${
           menuOpen ? "flex " : "hidden"
-        } absolute flex-col pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
+        } absolute z-[100] flex-col pl-5 sm:pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
       >
         {Navbar_content.map((ele, index) => {
           return (
-            <NavLink to={ele.link} key={index}>
+            <NavLink to={ele.link} key={index} onClick={() => setMenuOpen(false)}>
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"
@@ -121,7 +98,7 @@ const Navbar = () => {
         })}
         {Navbar_more.map((item, i) => {
           return (
-            <NavLink to={item.link} key={i}>
+            <NavLink to={item.link} key={i} onClick={() => setMenuOpen(false)}>
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"

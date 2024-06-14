@@ -26,17 +26,17 @@ const Contact = () => {
                   className="w-52 rounded-full"
                 />
               </div>
-              <div className="pr-8">
-                <h1 className={`text-2xl p-1 text-${faculty.textColor} `}>
+              <div className={`pr-8 text-${faculty.textColor}`}>
+                <h1 className="text-2xl p-1">
                   {faculty.name}
                 </h1>
-                <h1 className={`text-2xl p-1 text-${faculty.textColor} `}>
+                <h1 className="text-2xl p-1">
                   {faculty.designation},
                 </h1>
-                <h1 className={`text-2xl p-1 text-${faculty.textColor} `}>
+                <h1 className="text-2xl p-1">
                   {faculty.clgName}.
                 </h1>
-                <h1 className={`text-2xl p-1 text-${faculty.textColor} `}>
+                <h1 className={`text-2xl p-1`}>
                   {faculty.email && `Email : ${faculty.email}`}
                 </h1>
               </div>
