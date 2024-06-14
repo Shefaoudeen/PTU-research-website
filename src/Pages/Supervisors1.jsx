@@ -66,7 +66,7 @@ const Supervisors1 = () => {
                       <div className="w-full text-center flex flex-col justify-center">
                         {ele.pkiet_status ? (
                           <div className="w-full text-center flex flex-col justify-center">
-                            <h1>
+                            <h1 className="font-semibold">
                               Recognized Supervisors from PKIET with
                               specialization
                             </h1>

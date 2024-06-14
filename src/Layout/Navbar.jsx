@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <div
             className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "rotate-45 translate-y-1.5" : ""
+              menuOpen ? "rotate-[135deg] translate-y-1.5" : ""
             }`}
           ></div>
           <div
@@ -34,7 +34,7 @@ const Navbar = () => {
           ></div>
           <div
             className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-2.5" : ""
+              menuOpen ? "-rotate-[135deg] -translate-y-2.5" : ""
             }`}
           ></div>
         </div>
@@ -77,15 +77,16 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* for smaller screens */}
       <div
         id="menuBar"
         className={`${
           menuOpen ? "flex " : "hidden"
-        } absolute flex-col pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
+        } absolute z-[100] flex-col pl-5 sm:pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
       >
         {Navbar_content.map((ele, index) => {
           return (
-            <NavLink to={ele.link} key={index}>
+            <NavLink to={ele.link} key={index} onClick={() => setMenuOpen(false)}>
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"
@@ -97,7 +98,7 @@ const Navbar = () => {
         })}
         {Navbar_more.map((item, i) => {
           return (
-            <NavLink to={item.link} key={i}>
+            <NavLink to={item.link} key={i} onClick={() => setMenuOpen(false)}>
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"
