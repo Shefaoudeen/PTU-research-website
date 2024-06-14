@@ -34,7 +34,7 @@ const Supervisors1 = () => {
           {Supervisors_dept.map((ele) => {
             return (
               <div
-                className="border-[#1e6c93] border-b-2 cursor-pointer"
+                className="border-[#1e6c93] border-b-2 cursor-pointer py-2"
                 onClick={() => handleOnClick(ele.id)}
               >
                 <div className="flex justify-between items-center">
