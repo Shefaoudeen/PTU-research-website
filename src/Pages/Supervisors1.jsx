@@ -41,11 +41,22 @@ const Supervisors1 = () => {
                   <h1 className="text-[#1e6c93] font-semibold text-xl py-5">
                     {ele.dept}
                   </h1>
-                  <div>arrow</div>
+                  <div className="pr-4">
+                    <img
+                      src={arrowIcon}
+                      className={`w-4 duration-300 ${
+                        accordionOpen == ele.id ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
                 </div>
                 <div className="flex w-full justify-center">
                   {accordionOpen === ele.id ? (
-                    <div className="w-full text-center flex flex-col justify-center">
+                    <div
+                      className={`w-full text-center flex flex-col justify-center ${
+                        accordionOpen !== ele.id ? "max-h-0" : "h-fit"
+                      } transition-all duration-1000 ease-linear`}
+                    >
                       <h1 className="text-xl font-semibold py-4">
                         Recognized Supervisors from PTU with specialization
                       </h1>
@@ -61,7 +72,7 @@ const Supervisors1 = () => {
                                 <th className="font-normal w-[17vw]">
                                   {staff.role}
                                 </th>
-                                <th className="font-normal w-[40vw]">
+                                <th className="font-normal w-[40vw] p-2">
                                   {staff.areas}
                                 </th>
                               </tr>
@@ -81,7 +92,7 @@ const Supervisors1 = () => {
                                 {ele.pkiet.map((staff, index) => {
                                   return (
                                     <tr className="bg-slate-100">
-                                      <th className="font-normal">
+                                      <th className="font-normal p-2">
                                         {index + 1}
                                       </th>
                                       <th className="font-normal w-[17vw]">
@@ -90,7 +101,7 @@ const Supervisors1 = () => {
                                       <th className="font-normal w-[17vw]">
                                         {staff.role}
                                       </th>
-                                      <th className="font-normal w-[40vw]">
+                                      <th className="font-normal w-[40vw] p-2">
                                         {staff.areas}
                                       </th>
                                     </tr>
