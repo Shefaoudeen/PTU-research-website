@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../Layout/Banner";
-import arrowIcon from "../assets/Images/icons/arrow-icon.svg";
+import arrowIcon from "../assets/icons/arrow-icon.svg";
 import { Supervisors_dept } from "../Data/Supervisors-dept";
 
 const Supervisors1 = () => {
@@ -30,7 +30,7 @@ const Supervisors1 = () => {
           </h1>
         </div>
         {/* accordian section */}
-        <div className="w-[80vw] m-auto">
+        <div className="w-[80vw] m-auto py-8">
           {Supervisors_dept.map((ele) => {
             return (
               <div
@@ -41,12 +41,12 @@ const Supervisors1 = () => {
                   <h1 className="text-[#1e6c93] font-semibold text-xl py-5">
                     {ele.dept}
                   </h1>
-                  <div>arrow</div>
+                  <div className="pr-4"><img src={arrowIcon} className={`w-4 duration-300 ${accordionOpen == ele.id? "rotate-180" : ""}`}/></div>
                 </div>
                 <div className="flex w-full justify-center">
                   {accordionOpen === ele.id ? (
                     <div className="w-full text-center flex flex-col justify-center">
-                      <h1>
+                      <h1 className="font-semibold">
                         Recognized Supervisors from PTU with specialization
                       </h1>
                       <div className="px-2 flex justify-center w-full">
