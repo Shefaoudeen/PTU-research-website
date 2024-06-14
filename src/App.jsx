@@ -3,7 +3,7 @@ import Layout from "./Layout/Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import ResAreas from "./Pages/ResAreas";
-import Supervisors from "./Pages/Supervisors";
+import Supervisors1 from "./Pages/Supervisors1";
 import ResGrants from "./Pages/ResGrants";
 import Scholars from "./Pages/Scholars";
 import Policy from "./Pages/Policy";
@@ -43,7 +43,7 @@ export default function App() {
             <Route path="math" element={<Mathematics />} />
             <Route path="phy" element={<Phy />} />
           </Route>
-          <Route path="/supervisors" element={<Supervisors />} />
+          <Route path="/supervisors" element={<Supervisors1 />} />
           <Route path="/researchGrants" element={<ResGrants />} />
           <Route path="/scholarsCentre" element={<Scholars />} />
           <Route path="/policy" element={<Policy />} />
