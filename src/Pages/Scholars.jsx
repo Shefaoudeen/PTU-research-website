@@ -36,7 +36,7 @@ const Scholars = () => {
         additional={""}
       />
       {/* barChart section  */}
-      <div className="h-[60vh] md:h-[90vh] w-[80vw] py-10 md:p-20 mx-auto">
+      <div className="h-[60vh] md:h-[90vh] w-[90vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
         <div className="h-full w-full">
           <ResponsiveContainer width="100%" height="100%" ref={barChartRef}>
             <BarChart
