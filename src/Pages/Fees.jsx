@@ -16,11 +16,11 @@ const Fees = () => {
         <h1 className="text-3xl text-center mt-10 p-1 text-blue-800 font-semibold">
           Fee Structure for Ph.D Scholars
         </h1>
-        <div className="mt-10 py-4 px-32">
+        <div className="mt-10 py-4 px-2 sm:px-10 md:px-20 lg:px-32">
           {feeDetails.map((ele, index) => {
             return (
               <div
-                className={`flex flex-wrap justify-between items-center px-10 py-10 rounded-md ${
+                className={`flex gap-4 flex-wrap md:flex-nowrap justify-center md:justify-between items-center px-10 py-10 rounded-md ${
                   index % 2 === 0 ? "bg-slate-100" : ""
                 }`}
                 key={index}
