@@ -23,10 +23,12 @@ import EIE from "./Pages/Dept-ResearchArea/EIE";
 import InfoTech from "./Pages/Dept-ResearchArea/InfoTech";
 import Mathematics from "./Pages/Dept-ResearchArea/Mathematics";
 import EEE from "./Pages/Dept-ResearchArea/EEE";
+import ScrollToTop from "./Layout/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

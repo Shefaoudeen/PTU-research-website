@@ -19,7 +19,7 @@ const All_Dept = [
     dept: "Computer Science and Engineering",
     id: 3,
     next_page: true,
-    short_content: `The department of ECE is offering Ph. D program in Electronics and Communication Engineering. The major areas of research are Wireless Communication and Networks, Digital System Design, Digital Image Processing, Digital Signal Processing, Biomedical Engineering, Optical Networks,   Antennas, Mobile Adhoc and Wireless Sensor Networks,   Telemedicine, Bio medical signal processing, Medical Information and Signal Processing, Cryptography and Network Security, Securing Wireless and Sensor Networks, ASIC and VLSI Design, RF and Optical communication and Computer Networks. The Department of ECE is offering excellent facilities for the research scholars pursuing Ph. D program.`,
+    short_content: `The Department of Computer Science and Engineering (CSE) is a hub of innovation and discovery, equipped with state-of-the-art research facilities and spanning a wide array of research areas. Located within its walls are cutting-edge laboratories, collaborative spaces, and resources that foster groundbreaking research in various domains of Computer Science and Engineering. Let's delve into the research facilities and areas available within the Department of CSE.`,
     path_link: "/researchAreas/cse",
   },
   {
@@ -40,9 +40,9 @@ const All_Dept = [
   {
     dept: "Electronics and Instrumentation Engineering",
     id: 6,
-    next_page: false,
-    component: false,
-    content: `The Department of Electronics and Instrumentation Engineering was started in 1998 and has been producing resourceful engineers. The department has been blessed with well-experienced and highly-motivated faculty members. In academic research, most faculty members of the department are involved in research work in emerging areas which is the major strength of the department. The department primarily focuses on areas like microprocessors, micro- controllers, Telecommunication, Robotics, Biomedical, Digital signal processing, Transducers and measurement, Computer Control in Process applications, Virtual instrumentation etc. Practical knowledge being the most vital part of education, the department trains the students in the well-equipped laboratories like Electronics lab, transducers and measurements lab, process –control, automation lab, microcontrollers and microprocessors lab. All the labs are well equipped with state- of- the- art equipment and latest software packages like MATLAB, PLC, P- SPICE and LabVIEW for the accessibility of students.`,
+    next_page: true,
+    short_content: `The Department of Electronics and Instrumentation Engineering was started in 1998 and has been producing resourceful engineers. The department has been blessed with well-experienced and highly-motivated faculty members. In academic research, most faculty members of the department are involved in research work in emerging areas which is the major strength of the department. The department primarily focuses on areas like microprocessors, micro- controllers, Telecommunication, Robotics, Biomedical, Digital signal processing, Transducers and measurement, Computer Control in Process applications, Virtual instrumentation etc. Practical knowledge being the most vital part of education, the department trains the students in the well-equipped laboratories like Electronics lab, transducers and measurements lab, process –control, automation lab, microcontrollers and microprocessors lab. All the labs are well equipped with state- of- the- art equipment and latest software packages like MATLAB, PLC, P- SPICE and LabVIEW for the accessibility of students.`,
+    path_link: "/researchAreas/eie",
   },
   {
     dept: "Chemical Engineering",
@@ -54,32 +54,33 @@ const All_Dept = [
   {
     dept: "Information Technology",
     id: 8,
-    next_page: false,
-    component: false,
-    content: `The Department of Information Technology, PTU offers Under Graduate programme B.Tech (Information Technology), Post Graduate programme M.Tech (Internet of Things) and Doctoral programme Ph.D. The Department is committed to the preparation of graduates to address the great challenges in the field of Information Technology and to contribute for research and innovation that ensure the sustained growth in Computing.
+    next_page: true,
+    short_content: `The Department of Information Technology, PTU offers Under Graduate programme B.Tech (Information Technology), Post Graduate programme M.Tech (Internet of Things) and Doctoral programme Ph.D. The Department is committed to the preparation of graduates to address the great challenges in the field of Information Technology and to contribute for research and innovation that ensure the sustained growth in Computing.
     The Department has 5 labs with 125 computer systems with internet facilities. All the faculty members are Supervisors and have diversified expertise in IT field not restricted to Software Engineering, Image processing, Natural Language processing, Real time systems, Information Security, Distributed computing, Mobile Networks, Data Mining, Big Data, Machine Learning and Internet of Things. 
     At present around 30 Research scholars are pursuing their Ph.D course in the department both in full time and part time mode in Health care, Smart Agriculture, Business analytics, Information Security, Cloud computing, Software engineering, Internet of things etc.`,
+    path_link: "/researchAreas/it",
   },
   {
     dept: "Physics",
     id: 9,
-    next_page: false,
-    component: false,
-    content: `The Department of Physics has been functioning right from the inception of the institution in 1985. The Department initially functioned as a supporting department catering to the demands of the under-graduate students. The Department started a post-graduate course in Material Science and Technology in 1992. The M.Phil. and Ph.D. research programs were begun in 1997. The Department has a well-equipped Physics Laboratory and P.G. Material Science & Technology Laboratory. The laboratories of the department are equipped with state of the art equipment some of which include the following: Flaw Detector, Ultrasonic Magnetic Particle Detector, Eddy Current Detector, Strain analysis Equipment with DAS computer Stand-alone System, Viscometer (milli Pascal to mega Pascal range), Vacuum coating units with Electron Beam Gun, Four-probe, Two-probe Conductivity Measurement Setup, Differential Thermal Analyzer, Thermo Luminescence Set-up, High power Electro Magnet with imported gauss meters to measure axial and transverse magnetic fields, Electronic Balance Micro and Milligram Accuracy, Ball Mill (planetary type), and LCR meter. The department has five highly qualified and experienced faculty members.`,
+    next_page: true,
+    short_content: `The Department of Physics has been functioning right from the inception of the institution in 1985. The Department initially functioned as a supporting department catering to the demands of the under-graduate students. The Department started a post-graduate course in Material Science and Technology in 1992. The M.Phil. and Ph.D. research programs were begun in 1997. The Department has a well-equipped Physics Laboratory and P.G. Material Science & Technology Laboratory. The laboratories of the department are equipped with state of the art equipment some of which include the following: Flaw Detector, Ultrasonic Magnetic Particle Detector, Eddy Current Detector, Strain analysis Equipment with DAS computer Stand-alone System, Viscometer (milli Pascal to mega Pascal range), Vacuum coating units with Electron Beam Gun, Four-probe, Two-probe Conductivity Measurement Setup, Differential Thermal Analyzer, Thermo Luminescence Set-up, High power Electro Magnet with imported gauss meters to measure axial and transverse magnetic fields, Electronic Balance Micro and Milligram Accuracy, Ball Mill (planetary type), and LCR meter. The department has five highly qualified and experienced faculty members.`,
+    path_link: "/researchAreas/phy",
   },
   {
     dept: "Chemistry",
     id: 10,
-    next_page: false,
-    component: true,
-    display_component: { Chemistry_short },
+    next_page: true,
+
+    short_content: `The Department of Chemistry consists of a team of 3 Professors (regular Faculty) and three Assistant Professors (Short Term Contract Faculty) at present. Academic research is conducted by the regular faculty in the fields of Polymer Technology, Organic Reaction Modeling and Nanotechnology. The department has completed the following sponsored research projects successfully...`,
+    path_link: "/researchAreas/chemistry",
   },
   {
     dept: "Mathematics",
     id: 11,
-    next_page: false,
-    component: false,
-    content: `The Department of Physics has been functioning right from the inception of the institution in 1985. The Department initially functioned as a supporting department catering to the demands of the under-graduate students. The Department started a post-graduate course in Material Science and Technology in 1992. The M.Phil. and Ph.D. research programs were begun in 1997. The Department has a well-equipped Physics Laboratory and P.G. Material Science & Technology Laboratory. The laboratories of the department are equipped with state of the art equipment some of which include the following: Flaw Detector, Ultrasonic Magnetic Particle Detector, Eddy Current Detector, Strain analysis Equipment with DAS computer Stand-alone System, Viscometer (milli Pascal to mega Pascal range), Vacuum coating units with Electron Beam Gun, Four-probe, Two-probe Conductivity Measurement Setup, Differential Thermal Analyzer, Thermo Luminescence Set-up, High power Electro Magnet with imported gauss meters to measure axial and transverse magnetic fields, Electronic Balance Micro and Milligram Accuracy, Ball Mill (planetary type), and LCR meter. The department has five highly qualified and experienced faculty members.`,
+    next_page: true,
+    short_content: `he Department of Mathematics possess 4 Professors (regular Faculty) and three Assistant Professors (Short Term Contract Faculty) at present. Academic research is conducted by the regular faculty in the fields of Probability, Stochastic Processes and Queueing Theory, Numerical Analysis and Scientific Computing, Commutative and Homological Algebra, Computational Fluid Dynamics`,
+    path_link: "/researchAreas/math",
   },
 ];
 
