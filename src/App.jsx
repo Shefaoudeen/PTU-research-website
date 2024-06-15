@@ -22,6 +22,7 @@ import Phy from "./Pages/Dept-ResearchArea/Phy";
 import EIE from "./Pages/Dept-ResearchArea/EIE";
 import InfoTech from "./Pages/Dept-ResearchArea/InfoTech";
 import Mathematics from "./Pages/Dept-ResearchArea/Mathematics";
+import EEE from "./Pages/Dept-ResearchArea/EEE";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="chemistry" element={<Chemistry />} />
             <Route path="chem" element={<Chem />} />
             <Route path="cse" element={<CSE />} />
+            <Route path="eee" element={<EEE />} />
             <Route path="ece" element={<ECE />} />
             <Route path="eie" element={<EIE />} />
             <Route path="it" element={<InfoTech />} />
