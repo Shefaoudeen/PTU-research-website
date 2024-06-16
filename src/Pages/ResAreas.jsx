@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Banner from "../Layout/Banner";
 import arrowIcon from "../assets/icons/arrow-icon.svg";
-import { Supervisors_dept } from "../Data/Supervisors-dept";
 import { All_Dept } from "./Dept-ResearchArea/Dept-Research-file/AllDept";
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,7 @@ const Supervisors1 = () => {
   };
 
   return (
-    <>
+    <div className="select-none">
       <Banner
         title={"Directorate of Academic Research"}
         desc={"Research Areas  & Facilities"}
@@ -60,16 +59,26 @@ const Supervisors1 = () => {
                     >
                       {ele.next_page ? (
                         <div>
-                          <p>{ele.short_content}</p>
-                          <div className="relative h-[30px]">
+                          <p className="text-lg">
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            {ele.short_content}
+                          </p>
+                          <div className="relative h-[40px]">
                             <Link to={ele.path_link}>
-                              <p href="" className="absolute right-0">
-                                more details...
+                              <p
+                                href=""
+                                className="absolute right-0 mt-1 text-blue-600 font-bold text-xl"
+                              >
+                                More details...
                               </p>
                             </Link>
                           </div>
                         </div>
-                      ) : null}
+                      ) : (
+                        <div>
+                          <p>{ele.content}</p>
+                        </div>
+                      )}
                     </div>
                   ) : null}
                 </div>
@@ -78,7 +87,7 @@ const Supervisors1 = () => {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
