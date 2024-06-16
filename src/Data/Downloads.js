@@ -20,12 +20,12 @@ const thesis = {
 
 const synopsisForms = [
     {
-        title : "certificate_supervisor",
+        title : "certificate supervisor",
         thumnail : certificate_supervisor,
         link : "https://docs.google.com/document/d/1R5AowG6i4mA-ZeKhLO40oQ7vCwh5Kdne/edit?usp=drive_link&ouid=102544829276987280173&rtpof=true&sd=true"
     },
     {
-        title : "Minutes_of_synopsis_meeting",
+        title : "Minutes of synopsis meeting",
         thumnail : minutes_of_synopsis,
         link : "https://docs.google.com/document/d/1tzmImzu1c125J-x7J7a8031fyPB4QRCQ/edit"
     },
@@ -35,17 +35,17 @@ const synopsisForms = [
         link : "https://docs.google.com/document/d/112B8MUarJRSJOxfSn7Q8bv0E20uCwmMF/edit"
     },
     {
-        title : "PTU_Synopsis_submission_covering_letter",
+        title : "PTU Synopsis submission covering letter",
         thumnail : synopsis_covering,
         link : "https://docs.google.com/document/d/1xMgdSAqZ3q5xmmNOH_VX8IxmVAhS4md4/edit"
     },
     {
-        title : "Synopsis_Attendance_Format",
+        title : "Synopsis Attendance Format",
         thumnail : synopsis_attendance,
         link : "https://docs.google.com/document/d/1epBC-HwvBeGAMc43530JEVXFMdxzgc5I/edit"
     },
     {
-        title : "Synopsis_Notification",
+        title : "Synopsis Notification",
         thumnail : synopsis_notification,
         link : "https://docs.google.com/document/d/1vzinWA7lmhk1ucxsDZUs4zjEWGl-KeU1/edit"
     },
