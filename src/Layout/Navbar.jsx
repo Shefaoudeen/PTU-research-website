@@ -3,7 +3,7 @@ import { Navbar_content, Navbar_more } from "../Data/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import arrowIcon from '../assets/icons/arrow-icon.svg'
+import arrowIcon from "../assets/icons/arrow-icon.svg";
 
 const Navbar = () => {
   const [moreOpen, setMoreOpen] = useState(false);
@@ -54,7 +54,10 @@ const Navbar = () => {
             >
               {" "}
               <h2>More</h2>{" "}
-              <img className={`w-4 duration-300 ${moreOpen? "rotate-180" : ""}`} src={arrowIcon}></img>
+              <img
+                className={`w-4 duration-300 ${moreOpen ? "rotate-180" : ""}`}
+                src={arrowIcon}
+              ></img>
             </div>
           </div>
           <div
@@ -86,7 +89,11 @@ const Navbar = () => {
       >
         {Navbar_content.map((ele, index) => {
           return (
-            <NavLink to={ele.link} key={index} onClick={() => setMenuOpen(false)}>
+            <NavLink
+              to={ele.link}
+              key={index}
+              onClick={() => setMenuOpen(false)}
+            >
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"

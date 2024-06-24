@@ -24,8 +24,8 @@ const Navbar_content = [
     link: "/scholarsCentre",
   },
   {
-    title: "Policy",
-    link: "/policy",
+    title: "Projects",
+    link: "/projects",
   },
 ];
 
@@ -41,6 +41,10 @@ const Navbar_more = [
   {
     title: "Plagiarism",
     link: "/plagiarism",
+  },
+  {
+    title: "Policy",
+    link: "/policy",
   },
   {
     title: "Downloads",

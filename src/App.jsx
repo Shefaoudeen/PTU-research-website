@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import ResAreas from "./Pages/ResAreas";
 import Supervisors1 from "./Pages/Supervisors1";
 import ResGrants from "./Pages/ResGrants";
+import Project from "./Pages/Project";
 import Scholars from "./Pages/Scholars";
 import Policy from "./Pages/Policy";
 import Fees from "./Pages/Fees";
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/supervisors" element={<Supervisors1 />} />
           <Route path="/researchGrants" element={<ResGrants />} />
           <Route path="/scholarsCentre" element={<Scholars />} />
+          <Route path="/projects" element={<Project />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/fees" element={<Fees />} />
           <Route path="/journals" element={<Journals />} />
