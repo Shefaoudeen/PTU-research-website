@@ -104,7 +104,7 @@ const Projects_details = [
   },
   {
     Title: "RPS",
-    Investigator: "Dr.P. AJAY D VIMAL RAJ/Dr.N.P. SUBRAMANIAM",
+    Investigator: ["Dr.P. AJAY D VIMAL RAJ", "Dr.N.P. SUBRAMANIAM"],
     Funding: "AICTE",
     Type: "Government",
     Department: "EEE",
