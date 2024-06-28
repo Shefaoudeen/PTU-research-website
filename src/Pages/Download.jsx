@@ -48,7 +48,7 @@ const Download = () => {
         <div className="mt-10 grid grid-cols-2 gap-y-4 divide-x-2 grid-flow-column">
           {synopsisForms.map((form, index) => {
             return (
-              <div key={index} className={`py-4 px-4 flex gap-4 flex-wrap md:flex-nowrap justify-center gap-y-5 md:justify-between items-center bg-slate-100`}>
+              <div key={index} className={`py-4 px-8 flex gap-4 flex-wrap md:flex-nowrap justify-center gap-y-5 md:justify-between items-center bg-slate-100`}>
                 
                 <div className="w-48 shadow-lg flex-shrink md:flex-shrink-0">
                   <img className="rounded-md" src={form.thumnail} alt={form.title} />
