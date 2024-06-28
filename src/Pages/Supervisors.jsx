@@ -19,11 +19,10 @@ const Supervisors = () => {
       />
       <div>
         <div className="flex items-center justify-center bg-[#1e6c93] text-white text-2xl py-8 px-6 font-semibold">
-          <h1 className="w-[80vw]">
-            Recognized Supervisors of Puducherry Technological University (PTU)
-            and Perunthalaivar Kamarajar Institute of Engineering and Technology
-            (PKIET)
-          </h1>
+          <h1 className="w-[80vw]">Recognized Supervisors of Puducherry Technological University (PTU)
+          and Perunthalaivar Kamarajar Institute of Engineering and Technology
+          (PKIET)</h1>
+          
         </div>
         {/* accordian section */}
         <div className="w-[80vw] m-auto">

@@ -72,6 +72,9 @@ const Scholars = () => {
         </div>
       </div>
       {/* end of barChart Section  */}
+      <div className="px-40">
+        <div className="bg-slate-400">shefa</div>
+      </div>
     </>
   );
 };
