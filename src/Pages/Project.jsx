@@ -3,6 +3,7 @@ import Banner from "../Layout/Banner";
 import Marquee from "react-fast-marquee";
 import { Projects_details } from "../Data/ProjectDetails";
 import ProjectInfo from "./ProjectInfo";
+import cardsBg from '../assets/Images/cardsBg.jpg'
 
 const Project = () => {
   const [selectId, setSelectId] = useState(null);
@@ -26,13 +27,16 @@ const Project = () => {
         additional={""}
       />
       <section className="flex justify-center items-center w-screen">
-        <section className="grid grid-flow-rows grid-cols-2  w-fit py-5 gap-10 ">
+        <section className="grid grid-flow-rows grid-cols-2  w-fit py-10 gap-10 ">
           {Projects_details.map((ele, index) => {
             return (
+              <div className="rounded-2xl shadow-black/50 shadow-xl">
+              <img className="h-28 w-full object-cover rounded-t-xl opacity-85" src={cardsBg}></img>
               <div
                 key={index}
-                className="border-2 relative border-slate-400 px-5 max-h-[250px] min-h-[200px] overflow-y-auto min-w-[500px] max-w-[500px] py-5 rounded-2xl shadow-black/50 border-none shadow-xl"
+                className="border-2 relative border-slate-400 px-5 max-h-[250px] min-h-[200px] overflow-y-auto min-w-[500px] max-w-[500px] py-5 border-none "
               >
+                
                 {ele.Title.length < 30 ? (
                   <h1 className="text-2xl font-bold">{ele.Title}</h1>
                 ) : (
@@ -59,6 +63,7 @@ const Project = () => {
                 {selectId === index ? (
                   <ProjectInfo info={ele} setSelectId={setSelectId} />
                 ) : null}
+              </div>
               </div>
             );
           })}

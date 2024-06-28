@@ -36,6 +36,7 @@ const Scholars = () => {
         additional={""}
       />
       {/* barChart section  */}
+      <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-8">No. of Ph.Ds awarded for last 10 years</h1>
       <div className="h-[60vh] md:h-[90vh] w-[90vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
         <div className="h-full w-full">
           <ResponsiveContainer width="100%" height="100%" ref={barChartRef}>
@@ -50,9 +51,9 @@ const Scholars = () => {
                 bottom: 5,
               }}
             >
-              <text x={350} y={15} fontWeight="bold" fontSize="20">
+              {/* <text x={350} y={15} fontWeight="bold" fontSize="20">
                 No. of Ph.Ds awarded for last 10 years
-              </text>
+              </text> */}
 
               {/* renders the bars only when the bars are in view */}
               {barChartVisible ? (
