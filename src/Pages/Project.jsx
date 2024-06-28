@@ -30,7 +30,7 @@ const Project = () => {
         <section className="grid grid-flow-rows grid-cols-2  w-fit py-10 gap-10 ">
           {Projects_details.map((ele, index) => {
             return (
-              <div className="rounded-2xl shadow-black/50 shadow-xl">
+              <div className="rounded-2xl shadow-black/50 shadow-lg">
               <img className="h-28 w-full object-cover rounded-t-xl opacity-85" src={cardsBg}></img>
               <div
                 key={index}
@@ -41,7 +41,7 @@ const Project = () => {
                   <h1 className="text-2xl font-bold">{ele.Title}</h1>
                 ) : (
                   <Marquee>
-                    <h1 className="text-2xl font-bold">{ele.Title}</h1>
+                    <h1 className="text-2xl font-bold">{ele.Title+"."}</h1>
                   </Marquee>
                 )}
                 <div className="flex items-center gap-2">

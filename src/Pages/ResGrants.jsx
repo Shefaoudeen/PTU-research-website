@@ -57,7 +57,7 @@ const ResGrants = () => {
               {barChartVisible ? (
                 <Bar
                   dataKey="grants_received"
-                  fill="#8884d8"
+                  fill="#4682B4"
                   barSize={40}
                   animationDuration={1000}
                 />
