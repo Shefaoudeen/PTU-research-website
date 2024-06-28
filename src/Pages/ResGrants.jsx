@@ -1,4 +1,4 @@
-import React,{useRef,useEffect,useState} from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Banner from "../Layout/Banner";
 import {
   BarChart,
@@ -34,7 +34,9 @@ const ResGrants = () => {
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
-      <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-12">Research grants received from Departments, PTU (in Lakhs)</h1>
+      <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-12">
+        Research grants received from Departments, PTU (in Lakhs)
+      </h1>
       <div className="h-[60vh] md:h-[90vh] w-[80vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
         <div className="h-full w-[80%] mx-auto">
           <ResponsiveContainer width="100%" height="100%" ref={barChartRef}>
@@ -57,14 +59,14 @@ const ResGrants = () => {
               {barChartVisible ? (
                 <Bar
                   dataKey="grants_received"
-                  fill="#8884d8"
+                  fill="#4682B4"
                   barSize={40}
                   animationDuration={1000}
                 />
-               ) : null} 
+              ) : null}
 
               <XAxis dataKey="dept" />
-              <YAxis dataKey="grants_received" ticks={[0,100,200,300]} />
+              <YAxis dataKey="grants_received" ticks={[0, 100, 200, 300]} />
               <Tooltip cursor={false} />
             </BarChart>
           </ResponsiveContainer>
