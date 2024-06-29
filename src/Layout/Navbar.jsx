@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import arrowIcon from "../assets/icons/arrow-icon.svg";
+import { PTU1, Ptu_logo } from "../assets";
 
 const Navbar = () => {
   const [moreOpen, setMoreOpen] = useState(false);
@@ -18,7 +19,9 @@ const Navbar = () => {
     <>
       <div className="fixed md:static w-screen z-[9999999]">
         <nav className="relatve  bg-white flex py-1 px-4 items-center justify-between text-lg font-light select-none shadow-xl">
-          <div>Logo</div>
+          <div>
+            <img src={Ptu_logo} className="w-[40px]" />
+          </div>
           <div
             className="py-2 md:hidden flex flex-col justify-center items-center cursor-pointer duration-300 "
             onClick={() => setMenuOpen(!menuOpen)}

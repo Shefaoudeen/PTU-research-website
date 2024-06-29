@@ -5,5 +5,6 @@ import pic1 from "./Images/pic1.jpg";
 import pic2 from "./Images/pic2.jpg";
 import Github from "./icons/github.png";
 import Linkedin from "./icons/linkedin.png";
+import Ptu_logo from "./Images/ptu-logo.png";
 
-export { PTU1, Arrow, DC_Logo, pic1, pic2, Github, Linkedin };
+export { PTU1, Arrow, DC_Logo, pic1, pic2, Github, Linkedin, Ptu_logo };

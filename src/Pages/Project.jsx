@@ -18,11 +18,11 @@ const Project = () => {
   };
 
   return (
-    <div>
+    <div className="">
       {" "}
       <Banner
         title={"Directorate of Academic Research"}
-        desc={"Project"}
+        desc={"Projects"}
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
@@ -30,9 +30,9 @@ const Project = () => {
         <section className="grid grid-flow-rows grid-cols-2 max-md:grid-cols-1  w-fit py-10 md:gap-10 ">
           {Projects_details.map((ele, index) => {
             return (
-              <div className="rounded-2xl shadow-black/50 shadow-lg max-md:scale-[80%]">
+              <div className="relative rounded-2xl shadow-black/50 shadow-lg max-md:scale-[80%]">
                 <img
-                  className="h-28 w-full object-cover rounded-t-xl opacity-85 z-0"
+                  className="h-28 w-full object-cover rounded-t-xl opacity-85 -z-100"
                   src={cardsBg}
                 ></img>
                 <div
@@ -55,9 +55,12 @@ const Project = () => {
                       {ele.Department}
                     </h1>
                   </div>
-                  <h1>{ele.Funding}</h1>
+                  <h1 className="max-md:hidden">{ele.Funding}</h1>
+                  <h1 className="md:hidden">{ele.Funding}</h1>
+                  <h1 className="md:hidden">Total Fund : {ele.Funds}</h1>
+                  <h1 className="md:hidden">Duration : {ele.duration}</h1>
                   <div
-                    className="text-lg text-slate-600 cursor-pointer font-bold absolute bottom-4 right-4"
+                    className="text-lg text-slate-600 cursor-pointer font-bold absolute bottom-4 right-4 max-md:hidden"
                     onClick={() => handleClick(index)}
                   >
                     More Details

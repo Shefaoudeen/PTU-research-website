@@ -11,20 +11,19 @@ const About = () => {
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
-      <div className="flex px-5 py-10">
-        <div className="min-w-[650px]">
+      <div className="flex justify-center items-center px-5 py-10 max-md:flex-col">
+        <div className="md:min-w-[650px] max-md:w-[80%] flex flex-col justify-center items-start">
           <img
             src={PTU1}
             alt="PTU - PHOTO"
-            width={650}
             className="rounded-2xl shadow-2xl shadow-black/50"
           />
         </div>
-        <div className="px-10">
-          <div className="border-b-2 border-b-blue-600 pb-1 w-fit">
+        <div className="md:px-10">
+          <div className=" pb-1 w-fit max-md:hidden">
             <h1 className="text-3xl font-bold">About Us</h1>
           </div>
-          <p className="text-xl mt-5 leading-8">
+          <p className="text-xl mt-5 leading-8 max-md:text-lg text-justify">
             Puducherry Technological University (PTU), the first Technological
             University of Government of Puducherry, established in the year 2020
             by up gradation of erstwhile Pondicherry Engineering College (PEC),
