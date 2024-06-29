@@ -50,7 +50,7 @@ const Scholars = () => {
       <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-8">
         No. of Ph.Ds awarded for last 10 years
       </h1>
-      <div className="h-[60vh] md:h-[90vh] w-[90vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
+      <div className="h-[60vh] md:h-[90vh] w-[95vw] -translate-x-5 sm:w-[80vw] py-10 md:p-20 mx-auto">
         <div className="h-full w-full">
           <ResponsiveContainer width="100%" height="100%" ref={barChartRef}>
             <BarChart
@@ -89,10 +89,10 @@ const Scholars = () => {
       <div className="px-40 relative select-none">
         <div className="absolute  text-lg select-none bg-slate-200/75 rounded-xl">
           <div
-            className="flex bg-blue-400 rounded-xl items-center cursor-pointer"
+            className="flex bg-blue-500 rounded-xl items-center cursor-pointer"
             onClick={() => setOpenButton(!openButton)}
           >
-            <button className="border-none px-3 text-white font-bold py-1 rounded-xl bg-blue-400 ">
+            <button className="border-none px-3 text-white font-bold py-1 rounded-xl  ">
               Select Year
             </button>
             <img
@@ -106,36 +106,36 @@ const Scholars = () => {
             <ul
               className={`${
                 openButton ? "visible" : "hidden"
-              } cursor-pointer flex flex-col gap-1 duration-200 ease-linear transition-all`}
+              } cursor-pointer flex flex-col gap-1 duration-200 ease-linear transition-all py-3`}
             >
               <li
                 onClick={() => changeYear(0)}
-                className="hover:font-bold transition-all duration-200 ease-linear"
+                className="hover:font-bold "
               >
                 2020-21
               </li>
               <li
                 onClick={() => changeYear(1)}
-                className="hover:font-bold transition-all duration-200 ease-linear"
+                className="hover:font-bold"
               >
                 2021-22
               </li>
               <li
                 onClick={() => changeYear(2)}
-                className="hover:font-bold transition-all duration-200 ease-linear"
+                className="hover:font-bold"
               >
                 2022-23
               </li>
               <li
                 onClick={() => changeYear(3)}
-                className="hover:font-bold transition-all duration-200 ease-linear"
+                className="hover:font-bold"
               >
                 2023-24
               </li>
             </ul>
           </div>
         </div>
-        <div className="text-center text-2xl py-5 text-blue-400 font-bold">
+        <div className="text-center text-2xl py-5 text-blue-500 font-bold">
           {Scholars_Details[year].year} - {Scholars_Details[year].year + 1}{" "}
           Batch
         </div>
