@@ -42,7 +42,7 @@ const Project = () => {
                   {ele.Title.length < 30 ? (
                     <h1 className="text-2xl font-bold">{ele.Title}</h1>
                   ) : (
-                    <Marquee>
+                    <Marquee className="w-full">
                       <h1 className="text-2xl font-bold">{ele.Title + "."}</h1>
                     </Marquee>
                   )}
