@@ -13,15 +13,15 @@ const EEE = () => {
         additional={""}
       />
       <div className="bg-[#1e6c93]">
-        <div className="py-8 text-white font-semibold text-3xl ml-[200px]">
+        <div className="py-8 text-white font-semibold md:text-3xl md:ml-[200px] max-md:px-5 max-md:text-xl">
           <h1>
             Electrical and Electronics Department - Research areas and
             Facilities
           </h1>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 py-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 py-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {EEE_details.description1}
@@ -36,11 +36,11 @@ const EEE = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
-          <ul className="flex flex-col gap-5 px-10 list-disc">
+        <div className="md:px-20 md:text-lg flex flex-col md:gap-3 text-justify">
+          <ul className="flex flex-col md:gap-5 gap-2 px-10 list-disc">
             {EEE_details.funds.map((ele, index) => {
               return (
-                <li>
+                <li key={index}>
                   <span className="font-normal">{ele}</span>
                 </li>
               );
@@ -48,23 +48,23 @@ const EEE = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 ">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {EEE_details.description3}
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10 py-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
-          <div className=" text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10 py-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
+          <div className=" md:text-lg flex flex-col gap-3 text-justify">
             <p>The research interests of the faculty members include</p>
           </div>
-          <ul className="flex flex-col gap-5 px-10 list-disc">
+          <ul className="flex flex-col md:gap-5 max-md:gap-2 px-10 list-disc">
             {EEE_details.research_interest.map((ele, index) => {
               return (
-                <li>
+                <li key={index}>
                   <span className="font-normal">{ele}</span>
                 </li>
               );
@@ -72,8 +72,8 @@ const EEE = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {EEE_details.description4}
@@ -84,9 +84,9 @@ const EEE = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
-          <ul className="flex flex-col gap-5 px-10 list-disc">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
+          <ul className="flex flex-col md:gap-5 gap-2 px-10 list-disc">
             {EEE_details.facilities.map((ele, index) => {
               return (
                 <li>
@@ -97,8 +97,8 @@ const EEE = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {EEE_details.description6}

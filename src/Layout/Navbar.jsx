@@ -85,7 +85,7 @@ const Navbar = () => {
         id="menuBar"
         className={`${
           menuOpen ? "flex " : "hidden"
-        } absolute z-[100] flex-col pl-5 sm:pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
+        } absolute z-[100] flex-col pl-5 sm:pl-10 py-4 right-0 bg-white/75 backdrop-blur-sm w-[50vw] font-light shadow-lg h-screen`}
       >
         {Navbar_content.map((ele, index) => {
           return (

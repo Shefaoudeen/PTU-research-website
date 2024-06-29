@@ -16,11 +16,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#354146] p-2">
-        <a href="https://ptu-designclub.netlify.app/" target="_blank">
-          <h1 className="text-xl text-center font-semibold text-white">
-            Developed by Design Club, PTU
-          </h1>
-        </a>
+        <h1 className="text-xl text-center font-semibold text-white">
+          Developed by{" "}
+          <a href="https://ptu-designclub.netlify.app/" target="_blank">
+            <span className="hover:underline">Design Club - PTU</span>
+          </a>
+        </h1>
       </div>
     </>
   );

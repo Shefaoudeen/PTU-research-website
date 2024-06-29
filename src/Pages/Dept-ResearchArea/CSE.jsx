@@ -14,20 +14,20 @@ const CSE = () => {
         additional={""}
       />
       <div className="bg-[#1e6c93]">
-        <div className="py-8 text-white font-semibold text-3xl ml-[200px]">
+        <div className="py-8 text-white font-semibold md:text-3xl max-md:text-xl md:ml-[200px] max-md:px-10">
           <h1>Computer Science Department - Research areas and Facilities</h1>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 py-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 py-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {CSE_Details.description}
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10 w-screen">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify w-full">
           <h1 className="text-blue-700 text-2xl font-semibold">
             RESEARCH FACILITES
           </h1>
@@ -51,9 +51,9 @@ const CSE = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 pb-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
-          <h1 className="text-blue-700 text-2xl font-semibold">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 pb-10">
+        <div className="md:px-20 md:text-lg flex flex-col gap-3 text-justify">
+          <h1 className="text-blue-700 md:text-2xl max-md:text-xl font-semibold">
             RESEARCH AREAS
           </h1>
           <ul className="flex flex-col gap-5 py-5">

@@ -59,7 +59,7 @@ const Supervisors1 = () => {
                     >
                       {ele.next_page ? (
                         <div>
-                          <p className="text-lg">
+                          <p className="md:text-lg">
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             {ele.short_content}
                           </p>
