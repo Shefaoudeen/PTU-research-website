@@ -137,7 +137,7 @@ const Scholars = () => {
                 <div className="font-bold md:text-2xl text-lg">{ele.dept}</div>
                 <div className="w-full flex flex-col gap-2 items-center justify-center">
                   <div className="flex gap-1  md:min-w-[50%] md:max-w-[50%] text-center px-2 py-1 max-md:min-w-[75%] max-md:max-w-[75%]">
-                    <div className="w-[10%] bg-slate-400 p-1">S.No</div>
+                    <div className="w-[10%] bg-slate-400 p-1">No.</div>
                     <div className="w-[40%] bg-slate-400 p-1">Register No</div>
                     <div className="w-[60%] bg-slate-400 p-1">
                       Name of the Scholar

@@ -21,11 +21,13 @@ const Credits = () => {
         </div>
         <div className="flex flex-col items-center py-10">
           <h1 className="text-2xl font-bold md:mb-5">Developers</h1>
-          <div className="flex justify-center gap-10 max-md:flex-col max-md:scale-90">
+          <div className="flex justify-center gap-10 max-md:flex-col max-md:scale-75">
             <div className="flex items-center gap-2 bg-slate-100 rounded-xl shadow-2xl shadow-black">
               <img src={pic1} className="w-[200px] rounded-l-xl" />
               <div className="px-2">
-                <h1 className="text-3xl font-bold">Shefaoudeen Z</h1>
+                <h1 className="text-3xl max-md:text-xl font-bold">
+                  Shefaoudeen Z
+                </h1>
                 <h1 className="text-[#298892] text-xl font-bold">
                   Development Unit President
                 </h1>
