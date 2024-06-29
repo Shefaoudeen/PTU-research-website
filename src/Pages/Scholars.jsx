@@ -87,7 +87,7 @@ const Scholars = () => {
       </div>
       {/* end of barChart Section  */}
       <div className="md:px-40 relative select-none">
-        <div className="absolute  text-lg select-none bg-slate-200/75 rounded-xl max-md:left-5 max-md:scale-90">
+        <div className="absolute  text-lg select-none bg-slate-200 rounded-xl max-md:left-5 max-md:scale-90">
           <div
             className="flex bg-blue-500 rounded-xl items-center cursor-pointer"
             onClick={() => setOpenButton(!openButton)}
@@ -137,9 +137,9 @@ const Scholars = () => {
                 <div className="font-bold md:text-2xl text-lg">{ele.dept}</div>
                 <div className="w-full flex flex-col gap-2 items-center justify-center">
                   <div className="flex gap-1  md:min-w-[50%] md:max-w-[50%] text-center px-2 py-1 max-md:min-w-[75%] max-md:max-w-[75%]">
-                    <div className="w-[10%] bg-slate-400 py-1">S.No</div>
-                    <div className="w-[40%] bg-slate-400 ">Register No</div>
-                    <div className="w-[60%] bg-slate-400">
+                    <div className="w-[10%] bg-slate-400 p-1">S.No</div>
+                    <div className="w-[40%] bg-slate-400 p-1">Register No</div>
+                    <div className="w-[60%] bg-slate-400 p-1">
                       Name of the Scholar
                     </div>
                   </div>
@@ -149,13 +149,13 @@ const Scholars = () => {
                         key={ind}
                         className="flex gap-1  md:min-w-[50%] md:max-w-[50%] max-md:min-w-[75%] max-md:max-w-[75%] text-center group px-2 duration-200 hover:scale-110 transition-all ease-linear"
                       >
-                        <div className="w-[10%] bg-slate-200 py-1 group-hover:bg-slate-300 duration-100 transition-all ease-linear">
+                        <div className="w-[10%] bg-slate-200 py-1 group-hover:bg-slate-300 duration-100 transition-all ease-linear p-1">
                           {ind + 1}
                         </div>
-                        <div className="w-[40%] bg-slate-200 group-hover:bg-slate-300 duration-100 transition-all ease-linear">
+                        <div className="w-[40%] bg-slate-200 group-hover:bg-slate-300 duration-100 transition-all ease-linear p-1">
                           {e.reg_no}
                         </div>
-                        <div className="w-[60%] bg-slate-200 group-hover:bg-slate-300 duration-100 transition-all ease-linear">
+                        <div className="w-[60%] bg-slate-200 group-hover:bg-slate-300 duration-100 transition-all ease-linear p-1">
                           {e.name}
                         </div>
                       </div>
