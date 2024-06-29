@@ -25,6 +25,8 @@ import InfoTech from "./Pages/Dept-ResearchArea/InfoTech";
 import Mathematics from "./Pages/Dept-ResearchArea/Mathematics";
 import EEE from "./Pages/Dept-ResearchArea/EEE";
 import ScrollToTop from "./Layout/ScrollToTop";
+import PageNotFound from "./Pages/PageNotFound";
+import Credits from "./Pages/Credits";
 
 export default function App() {
   return (
@@ -32,6 +34,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="*" element={<PageNotFound />} />
           <Route index element={<Home />} />
           <Route path="/aboutUs" element={<About />} />
           <Route path="/researchAreas">
@@ -58,6 +61,7 @@ export default function App() {
           <Route path="/plagiarism" element={<Plagiarism />} />
           <Route path="/downloads" element={<Download />} />
           <Route path="/contactUs" element={<Contact />} />
+          <Route path="/credits" element={<Credits />} />
         </Route>
       </Routes>
     </BrowserRouter>

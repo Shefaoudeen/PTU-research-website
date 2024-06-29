@@ -1,5 +1,4 @@
-import pic1 from "../assets/Images/pic1.jpg";
-import pic2 from "../assets/Images/pic2.jpg";
+import { pic1, pic2 } from "../assets";
 
 const contact_Details = [
   {

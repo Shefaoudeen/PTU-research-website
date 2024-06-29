@@ -54,6 +54,10 @@ const Navbar_more = [
     title: "Contact Us",
     link: "/contactUs",
   },
+  {
+    title: "Credits",
+    link: "/credits",
+  },
 ];
 
 export { Navbar_content, Navbar_more };
