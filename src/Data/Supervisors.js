@@ -89,7 +89,7 @@ const Mech_PTU = [
   {
     faculty: "Dr.MATHIAZHAGAN.P",
     role: "Professor",
-    areas: "Heat & Mass Transfer/Oxidation/Corrosion/Coating/Solar",
+    areas: "Heat & Mass Transfer / Oxidation / Corrosion / Coating / Solar",
   },
   {
     faculty: "Dr.PRABU.B",

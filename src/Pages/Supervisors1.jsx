@@ -22,15 +22,15 @@ const Supervisors1 = () => {
         additional={""}
       />
       <div>
-        <div className="flex items-center justify-center bg-[#1e6c93] text-white text-2xl py-8 px-6 font-semibold">
-          <h1 className="w-[80vw]">
+        <div className="flex items-center justify-center bg-[#1e6c93] text-white text-2xl max-md:text-lg py-8 md:px-6 font-semibold">
+          <h1 className="w-[80vw] max-md:w-[90vw]">
             Recognized Supervisors of Puducherry Technological University (PTU)
             and Perunthalaivar Kamarajar Institute of Engineering and Technology
             (PKIET)
           </h1>
         </div>
         {/* accordian section */}
-        <div className="w-[75vw] m-auto py-5">
+        <div className="w-[75vw] max-md:w-[90vw] m-auto py-5">
           {Supervisors_dept.map((ele) => {
             return (
               <div className="border-[#1e6c93] border-b-2 py-2">
@@ -65,7 +65,9 @@ const Supervisors1 = () => {
                           {ele.ptu.map((staff, index) => {
                             return (
                               <tr className="bg-slate-100 max-w-full">
-                                <th className="font-normal p-2">{index + 1}</th>
+                                <th className="font-normal p-2 w-[10%]">
+                                  {index + 1}
+                                </th>
                                 <th className="font-normal w-[17vw] p-2">
                                   <h1>{staff.faculty}</h1>
                                   <h1 className="md:hidden">{staff.role}</h1>
@@ -93,7 +95,7 @@ const Supervisors1 = () => {
                                 {ele.pkiet.map((staff, index) => {
                                   return (
                                     <tr className="bg-slate-100 w-full">
-                                      <th className="font-normal p-2">
+                                      <th className="font-normal p-2 w-[10%]">
                                         {index + 1}
                                       </th>
                                       <th className="font-normal w-[17vw] p-2 ">
