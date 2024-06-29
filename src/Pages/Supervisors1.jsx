@@ -60,7 +60,7 @@ const Supervisors1 = () => {
                       <h1 className="text-xl font-semibold py-4">
                         Recognized Supervisors from PTU with specialization
                       </h1>
-                      <div className="px-2 flex justify-center w-full ma-md:text-xs">
+                      <div className="px-2 flex justify-center w-full max-md:text-xs">
                         <table className="w-full border-separate border-spacing-3">
                           {ele.ptu.map((staff, index) => {
                             return (
