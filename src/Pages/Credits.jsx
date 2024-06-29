@@ -48,8 +48,10 @@ const Credits = () => {
             <div className="flex items-center shadow-2xl shadow-black gap-2 bg-slate-100 rounded-xl">
               <img src={pic1} className="w-[200px] rounded-l-xl" />
               <div className="px-2">
-                <h1 className="text-3xl font-bold">Pradheep raj S</h1>
-                <h1 className="text-[#298892] text-xl font-bold">
+                <h1 className="text-3xl font-bold max-md:text-xl">
+                  Pradheep raj S
+                </h1>
+                <h1 className="text-[#298892] text-xl font-bold ">
                   Development Unit Scretary
                 </h1>
                 <h1 className="font-bold">CSE'26</h1>
