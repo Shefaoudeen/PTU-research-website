@@ -37,7 +37,7 @@ const Project = () => {
                 ></img>
                 <div
                   key={index}
-                  className="border-2 relative border-slate-400 px-5 max-h-[250px] min-h-[200px] overflow-y-auto min-w-[500px] max-w-[500px] py-5 border-none "
+                  className="border-2 relative border-slate-400 px-5 max-h-[250px] min-h-[200px] overflow-y-auto md:min-w-[500px] md:max-w-[500px] py-5 border-none "
                 >
                   {ele.Title.length < 30 ? (
                     <h1 className="text-2xl font-bold">{ele.Title}</h1>
