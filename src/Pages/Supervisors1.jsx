@@ -60,16 +60,17 @@ const Supervisors1 = () => {
                       <h1 className="text-xl font-semibold py-4">
                         Recognized Supervisors from PTU with specialization
                       </h1>
-                      <div className="px-2 flex justify-center w-full">
+                      <div className="px-2 flex justify-center w-full text-sm">
                         <table className="w-full border-separate border-spacing-3">
                           {ele.ptu.map((staff, index) => {
                             return (
                               <tr className="bg-slate-100">
-                                <th className="font-normal">{index + 1}</th>
-                                <th className="font-normal w-[17vw]">
-                                  {staff.faculty}
+                                <th className="font-normal p-2">{index + 1}</th>
+                                <th className="font-normal w-full p-2">
+                                  <h1>{staff.faculty}</h1>
+                                  <h1>{staff.role}</h1>
                                 </th>
-                                <th className="font-normal w-[17vw]">
+                                <th className="font-normal w-[17vw] max-md:hidden">
                                   {staff.role}
                                 </th>
                                 <th className="font-normal w-[40vw] p-2">
@@ -87,7 +88,7 @@ const Supervisors1 = () => {
                               Recognized Supervisors from PKIET with
                               specialization
                             </h1>
-                            <div className="px-2 flex justify-center w-full">
+                            <div className="px-2 flex justify-center w-full text-sm">
                               <table className="border-separate border-spacing-3 w-full">
                                 {ele.pkiet.map((staff, index) => {
                                   return (
@@ -95,10 +96,11 @@ const Supervisors1 = () => {
                                       <th className="font-normal p-2">
                                         {index + 1}
                                       </th>
-                                      <th className="font-normal w-[17vw]">
-                                        {staff.faculty}
+                                      <th className="font-normal w-[17vw] p-2 ">
+                                        <h1>{staff.faculty}</h1>
+                                        <h1>{staff.role}</h1>
                                       </th>
-                                      <th className="font-normal w-[17vw]">
+                                      <th className="font-normal w-[17vw] max-md:hidden">
                                         {staff.role}
                                       </th>
                                       <th className="font-normal w-[40vw] p-2">
