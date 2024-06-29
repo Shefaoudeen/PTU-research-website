@@ -16,7 +16,9 @@ const Navbar = () => {
   }, [menuOpen]);
   return (
     <>
-      <nav className="relative bg-white flex  py-1 px-4 items-center justify-between text-lg font-light select-none">
+      <div className="fixed md:static w-screen">
+
+      <nav className="relatve  bg-white flex py-1 px-4 items-center justify-between text-lg font-light select-none shadow-xl">
         <div>Logo</div>
         <div
           className="py-2 md:hidden flex flex-col justify-center items-center cursor-pointer duration-300 "
@@ -43,7 +45,7 @@ const Navbar = () => {
             {Navbar_content.map((ele, index) => {
               return (
                 <NavLink to={ele.link} key={index}>
-                  <button className="px-4 py-3">{ele.title}</button>
+                  <button className="px-4 py-3 hover:scale-110 duration-300">{ele.title}</button>
                 </NavLink>
               );
             })}
@@ -63,7 +65,7 @@ const Navbar = () => {
           <div
             onMouseOver={() => setMoreOpen(true)}
             onMouseLeave={() => setMoreOpen(false)}
-            className={`shadow-[0px_-12px_20px_-11px_rgba(0,0,0,0.46)] absolute rounded right-10 top-12 py-4 px-12 bg-slate-100 items-center flex-col  ${
+            className={`shadow-[0px_-12px_20px_-11px_rgba(0,0,0,0.46)] absolute rounded right-10 top-12 py-4 px-12 bg-white items-center flex-col  ${
               moreOpen ? "flex" : "hidden"
             }`}
           >
@@ -79,13 +81,14 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      </div>
 
       {/* for smaller screens */}
       <div
         id="menuBar"
         className={`${
           menuOpen ? "flex " : "hidden"
-        } absolute z-[100] flex-col pl-5 sm:pl-10 py-4 right-0 bg-white/50 backdrop-blur-md w-[50vw] font-light shadow-lg`}
+        } fixed z-[100] flex-col pl-5 sm:pl-10 py-4 top-10 right-0 bg-white/75 backdrop-blur-sm w-[50vw] font-light shadow-lg h-screen`}
       >
         {Navbar_content.map((ele, index) => {
           return (

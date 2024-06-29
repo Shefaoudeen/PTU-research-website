@@ -12,12 +12,12 @@ const Civil = () => {
         additional={""}
       />
       <div className="bg-[#1e6c93]">
-        <div className="py-8 text-white font-semibold text-3xl ml-[200px]">
+        <div className="py-8 text-white font-semibold md:text-3xl max-md:text-xl md:ml-[200px] max-md:ml-[50px]">
           <h1>Civil Department - Research areas and Facilities</h1>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 py-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 max-md:px-10 py-10">
+        <div className="md:px-20 text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {Civil_details.description1}
@@ -40,7 +40,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               MATERIALS TESTING AND EVALUATION LABORATORY - I
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1.5">
                 {Civil_details.materialTesting1.map((ele) => {
                   return (
@@ -57,7 +57,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               MATERIALS TESTING AND EVALUATION LABORATORY - II
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1.5">
                 {Civil_details.materialTesting2.map((ele) => {
                   return (
@@ -74,7 +74,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               CONCRETE LABORATORY
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.concreteLab.map((ele) => {
                   return (
@@ -91,7 +91,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               IMPORTANT EQUIPMENT AVAILABLE
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.important.map((ele) => {
                   return (
@@ -108,7 +108,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               GEOTECHNICAL ENGINEERING LAB
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.geotechnical.map((ele) => {
                   return (
@@ -125,7 +125,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               SURVEY LABORATORY
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.surveylab.map((ele) => {
                   return (
@@ -142,7 +142,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               ENVIRONEMNTAL LAORATORY
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.environmentalLab.map((ele) => {
                   return (
@@ -159,7 +159,7 @@ const Civil = () => {
             <h1 className="text-xl font-medium text-center">
               LIST OF MAJOR EQUIPMENTS
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal flex flex-col gap-1">
                 {Civil_details.majorEquipments.map((ele) => {
                   return (

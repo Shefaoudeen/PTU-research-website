@@ -13,12 +13,12 @@ const Mech = () => {
         additional={""}
       />
       <div className="bg-[#1e6c93]">
-        <div className="py-8 text-white font-semibold text-3xl ml-[200px]">
+        <div className="py-8 text-white font-semibold md:text-3xl max-md:text-xl md:ml-[200px] max-md:ml-[25px]">
           <h1>Mechanical Department - Research areas and Facilities</h1>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-20 py-10">
-        <div className="px-20 text-lg flex flex-col gap-3 text-justify">
+      <div className="flex flex-col justify-center md:px-20 py-10">
+        <div className="md:px-20 max-md:px-10 max-md: text-lg flex flex-col gap-3 text-justify">
           <p>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             {Mech_Details.description}
@@ -30,7 +30,7 @@ const Mech = () => {
           </h1>
 
           <div className="flex flex-col gap-5">
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ul className="list-disc text-justify flex px-10 flex-col gap-4 py-4">
                 {Mech_Details.research_lab.map((ele) => {
                   return (
@@ -49,7 +49,7 @@ const Mech = () => {
             <h1 className="text-blue-700 text-2xl font-semibold text-center">
               COMPUTATIONAL FACILITIES
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ul className="list-disc text-justify flex px-10 flex-col gap-4 py-4">
                 {Mech_Details.computation_facilities}
               </ul>
@@ -60,7 +60,7 @@ const Mech = () => {
             <h1 className="text-blue-700 text-2xl font-semibold text-center">
               RESEARCH AREAS
             </h1>
-            <div className="px-20 text-xl">
+            <div className="md:px-20 md:text-xl">
               <ol className="list-decimal text-justify flex px-10 flex-col gap-4 py-4">
                 {Mech_Details.research_areas.map((ele) => {
                   return <li className="font-normal">{ele}</li>;
