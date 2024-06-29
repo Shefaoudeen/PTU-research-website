@@ -86,8 +86,8 @@ const Scholars = () => {
         </div>
       </div>
       {/* end of barChart Section  */}
-      <div className="px-40 relative select-none">
-        <div className="absolute  text-lg select-none bg-slate-200/75 rounded-xl">
+      <div className="md:px-40 relative select-none">
+        <div className="absolute  text-lg select-none bg-slate-200/75 rounded-xl max-md:left-5 max-md:scale-90">
           <div
             className="flex bg-blue-500 rounded-xl items-center cursor-pointer"
             onClick={() => setOpenButton(!openButton)}
@@ -108,34 +108,22 @@ const Scholars = () => {
                 openButton ? "visible" : "hidden"
               } cursor-pointer flex flex-col gap-1 duration-200 ease-linear transition-all py-3`}
             >
-              <li
-                onClick={() => changeYear(0)}
-                className="hover:font-bold "
-              >
+              <li onClick={() => changeYear(0)} className="hover:font-bold ">
                 2020-21
               </li>
-              <li
-                onClick={() => changeYear(1)}
-                className="hover:font-bold"
-              >
+              <li onClick={() => changeYear(1)} className="hover:font-bold">
                 2021-22
               </li>
-              <li
-                onClick={() => changeYear(2)}
-                className="hover:font-bold"
-              >
+              <li onClick={() => changeYear(2)} className="hover:font-bold">
                 2022-23
               </li>
-              <li
-                onClick={() => changeYear(3)}
-                className="hover:font-bold"
-              >
+              <li onClick={() => changeYear(3)} className="hover:font-bold">
                 2023-24
               </li>
             </ul>
           </div>
         </div>
-        <div className="text-center text-2xl py-5 text-blue-500 font-bold">
+        <div className="text-center text-2xl py-5 text-blue-500 font-bold max-md:pt-12">
           {Scholars_Details[year].year} - {Scholars_Details[year].year + 1}{" "}
           Batch
         </div>
@@ -144,11 +132,11 @@ const Scholars = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center w-full gap-3 text-xl mb-10"
+                className="flex flex-col justify-center items-center w-full gap-3 md:text-xl mb-10 text-sm"
               >
-                <div className="font-bold text-2xl">{ele.dept}</div>
+                <div className="font-bold md:text-2xl text-lg">{ele.dept}</div>
                 <div className="w-full flex flex-col gap-2 items-center justify-center">
-                  <div className="flex gap-1  min-w-[50%] max-w-[50%] text-center px-2 py-1">
+                  <div className="flex gap-1  md:min-w-[50%] md:max-w-[50%] text-center px-2 py-1 max-md:min-w-[75%] max-md:max-w-[75%]">
                     <div className="w-[10%] bg-slate-400 py-1">S.No</div>
                     <div className="w-[40%] bg-slate-400 ">Register No</div>
                     <div className="w-[60%] bg-slate-400">
@@ -159,7 +147,7 @@ const Scholars = () => {
                     return (
                       <div
                         key={ind}
-                        className="flex gap-1  min-w-[50%] max-w-[50%] text-center group px-2 duration-200 hover:scale-110 transition-all ease-linear"
+                        className="flex gap-1  md:min-w-[50%] md:max-w-[50%] max-md:min-w-[75%] max-md:max-w-[75%] text-center group px-2 duration-200 hover:scale-110 transition-all ease-linear"
                       >
                         <div className="w-[10%] bg-slate-200 py-1 group-hover:bg-slate-300 duration-100 transition-all ease-linear">
                           {ind + 1}

@@ -16,71 +16,72 @@ const Navbar = () => {
   }, [menuOpen]);
   return (
     <>
-      <div className="fixed md:static w-screen">
-
-      <nav className="relatve  bg-white flex py-1 px-4 items-center justify-between text-lg font-light select-none shadow-xl">
-        <div>Logo</div>
-        <div
-          className="py-2 md:hidden flex flex-col justify-center items-center cursor-pointer duration-300 "
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+      <div className="fixed md:static w-screen z-[9999999]">
+        <nav className="relatve  bg-white flex py-1 px-4 items-center justify-between text-lg font-light select-none shadow-xl">
+          <div>Logo</div>
           <div
-            className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "rotate-[135deg] translate-y-1.5" : ""
-            }`}
-          ></div>
-          <div
-            className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-opacity duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          ></div>
-          <div
-            className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
-              menuOpen ? "-rotate-[135deg] -translate-y-2.5" : ""
-            }`}
-          ></div>
-        </div>
-        <div className="hidden md:block">
-          <div className="flex items-center flex-wrap">
-            {Navbar_content.map((ele, index) => {
-              return (
-                <NavLink to={ele.link} key={index}>
-                  <button className="px-4 py-3 hover:scale-110 duration-300">{ele.title}</button>
-                </NavLink>
-              );
-            })}
+            className="py-2 md:hidden flex flex-col justify-center items-center cursor-pointer duration-300 "
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <div
+              className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
+                menuOpen ? "rotate-[135deg] translate-y-1.5" : ""
+              }`}
+            ></div>
+            <div
+              className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-opacity duration-300 ${
+                menuOpen ? "opacity-0" : ""
+              }`}
+            ></div>
+            <div
+              className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
+                menuOpen ? "-rotate-[135deg] -translate-y-2.5" : ""
+              }`}
+            ></div>
+          </div>
+          <div className="hidden md:block">
+            <div className="flex items-center flex-wrap">
+              {Navbar_content.map((ele, index) => {
+                return (
+                  <NavLink to={ele.link} key={index}>
+                    <button className="px-4 py-3 hover:scale-110 duration-300">
+                      {ele.title}
+                    </button>
+                  </NavLink>
+                );
+              })}
+              <div
+                onMouseOver={() => setMoreOpen(true)}
+                onMouseLeave={() => setMoreOpen(false)}
+                className="cursor-pointer px-4 py-3 flex items-center gap-3"
+              >
+                {" "}
+                <h2>More</h2>{" "}
+                <img
+                  className={`w-4 duration-300 ${moreOpen ? "rotate-180" : ""}`}
+                  src={arrowIcon}
+                ></img>
+              </div>
+            </div>
             <div
               onMouseOver={() => setMoreOpen(true)}
               onMouseLeave={() => setMoreOpen(false)}
-              className="cursor-pointer px-4 py-3 flex items-center gap-3"
+              className={`shadow-[0px_-12px_20px_-11px_rgba(0,0,0,0.46)] absolute rounded right-10 top-12 py-4 px-12 bg-white items-center flex-col  ${
+                moreOpen ? "flex" : "hidden"
+              }`}
             >
-              {" "}
-              <h2>More</h2>{" "}
-              <img
-                className={`w-4 duration-300 ${moreOpen ? "rotate-180" : ""}`}
-                src={arrowIcon}
-              ></img>
+              {Navbar_more.map((item, i) => {
+                return (
+                  <NavLink to={item.link} key={i}>
+                    <button className="px-4 py-2 hover:scale-110  transition-all duration-300">
+                      {item.title}
+                    </button>
+                  </NavLink>
+                );
+              })}
             </div>
           </div>
-          <div
-            onMouseOver={() => setMoreOpen(true)}
-            onMouseLeave={() => setMoreOpen(false)}
-            className={`shadow-[0px_-12px_20px_-11px_rgba(0,0,0,0.46)] absolute rounded right-10 top-12 py-4 px-12 bg-white items-center flex-col  ${
-              moreOpen ? "flex" : "hidden"
-            }`}
-          >
-            {Navbar_more.map((item, i) => {
-              return (
-                <NavLink to={item.link} key={i}>
-                  <button className="px-4 py-2 hover:scale-110  transition-all duration-300">
-                    {item.title}
-                  </button>
-                </NavLink>
-              );
-            })}
-          </div>
-        </div>
-      </nav>
+        </nav>
       </div>
 
       {/* for smaller screens */}

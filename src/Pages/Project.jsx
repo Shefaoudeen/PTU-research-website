@@ -27,12 +27,12 @@ const Project = () => {
         additional={""}
       />
       <section className="flex justify-center items-center w-screen">
-        <section className="grid grid-flow-rows grid-cols-2  w-fit py-10 gap-10 ">
+        <section className="grid grid-flow-rows grid-cols-2 max-md:grid-cols-1  w-fit py-10 md:gap-10 ">
           {Projects_details.map((ele, index) => {
             return (
-              <div className="rounded-2xl shadow-black/50 shadow-lg">
+              <div className="rounded-2xl shadow-black/50 shadow-lg max-md:scale-[80%]">
                 <img
-                  className="h-28 w-full object-cover rounded-t-xl opacity-85"
+                  className="h-28 w-full object-cover rounded-t-xl opacity-85 z-0"
                   src={cardsBg}
                 ></img>
                 <div

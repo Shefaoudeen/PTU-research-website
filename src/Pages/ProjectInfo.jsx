@@ -3,7 +3,7 @@ import React from "react";
 const ProjectInfo = ({ info, setSelectId }) => {
   return (
     <div className="w-screen select-none fixed h-screen top-0 left-0 bg-slate-400/40 z-[100] flex justify-center items-center">
-      <div className="min-w-[1000px] relative min-h-[400px] rounded-2xl px-5 border-b-8 border-gray-500 bg-white opacity-100 flex items-center flex-col py-5 text-xl">
+      <div className="md:min-w-[1000px] relative min-h-[400px] rounded-2xl px-5 border-b-8 border-gray-500 bg-white opacity-100 flex items-center flex-col py-5 text-xl">
         <div
           onClick={() => setSelectId(null)}
           className="absolute right-8 top-8 cursor-pointer text-2xl font-bold text-gray-800"
