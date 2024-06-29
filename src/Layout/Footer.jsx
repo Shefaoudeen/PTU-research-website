@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#354146] p-2">
-        <a href="https://ptu-designclub.netlify.app/" target="_blank"><h1 className="text-xl text-center font-semibold text-white">Developed by Design Club, PTU</h1></a>
+        <a href="https://ptu-designclub.netlify.app/" className="group" target="_blank"><h1 className="text-xl text-center font-semibold text-white">Developed by <span className="group-hover:underline">Design Club</span>, PTU</h1></a>
       </div>
     </>
   );
