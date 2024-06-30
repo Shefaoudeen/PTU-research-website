@@ -14,9 +14,9 @@ const Home = () => {
           Warm Welcome to the Directorate of Academic Research
         </h1>
         <div className=" bg-slate-100 flex justify-center flex-col items-center py-6 w-full ">
-          <div className="flex md:flex-row flex-col items-center justify-between  md:w-[80vw]">
+          <div className="flex md:flex-row flex-col items-center md:items-start justify-between  md:w-[80vw]">
             <h2 className="font-bold text-3xl  min-w-40 p-2">VISION:</h2>
-            <p className="text-xl w-3/4 p-4">
+            <p className="text-xl w-3/4 px-4 md:py-0 text-justify">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, ad
               asperiores impedit numquam aperiam quam dignissimos repudiandae,
               at perferendis quas eligendi quibusdam doloremque nisi laudantium
@@ -24,9 +24,9 @@ const Home = () => {
             </p>
           </div>
           <br></br>
-          <div className="flex md:flex-row flex-col items-center justify-between md:w-[80vw]">
+          <div className="flex md:flex-row flex-col items-center md:items-start justify-between md:w-[80vw]">
             <h2 className="font-bold text-3xl min-w-40">MISSION:</h2>
-            <p className="text-xl w-3/4 p-4">
+            <p className="text-xl w-3/4 p-4 md:py-0 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est
               expedita quaerat mollitia accusamus eveniet, rerum qui
               exercitationem. Amet at deserunt expedita non optio odit mollitia
