@@ -11,7 +11,7 @@ const Banner = (props) => {
       >
         <div className="flex flex-col md:flex-row items-center justify-evenly md:justify-between h-full pt-16 md:pt-0 py-5 sm:px-12">
           <div className="">
-            <img className="w-40" src={ptuLogo}></img>
+            <img className="w-32 md:w-40" src={ptuLogo}></img>
           </div>
           <div className=" flex flex-col items-center gap-4 text-4xl px-10">
             <h1 className="text-blue-300 font-semibold text-center">

@@ -8,7 +8,7 @@ const Fees = () => {
       {" "}
       <Banner
         title={"Directorate of Academic Research"}
-        desc={"Fees particular"}
+        desc={"Fees particulars"}
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
