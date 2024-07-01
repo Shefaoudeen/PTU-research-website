@@ -18,7 +18,7 @@ const Home = () => {
             <h2 className="font-bold text-3xl  min-w-40 p-2 max-md:text-xl">
               VISION:
             </h2>
-            <p className="text-xl md:w-[80%] p-4">
+            <p className="text-xl md:w-[80%] p-4 text-justify">
               To evolve into a university of global eminence through
               transformative learning and research in frontier areas of
               engineering and technology towards developing holistic technology

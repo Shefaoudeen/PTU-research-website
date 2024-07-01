@@ -13,20 +13,26 @@ const Credits = () => {
       />
       <div className="w-full flex flex-col justify-center items-center">
         <div className="flex gap-6 flex-col items-center">
-          <h1 className="text-2xl md:text-3xl font-bold bg-[#1e6c93] w-screen text-center py-3 text-white">Website Developed by</h1>
+          <h1 className="text-2xl md:text-3xl font-bold bg-[#1e6c93] w-screen text-center py-3 text-white">
+            Website Developed by
+          </h1>
           <div className="flex flex-col md:flex-row justify-center items-center md:gap-10">
             <img src={DC_Logo} alt="" className="w-[200px] mt-5" />
             <h1 className="font-bold text-3xl md:text-5xl pt-5 text-[#298892]">
-            DESIGN CLUB - DC24
+              DESIGN CLUB - DC24
             </h1>
           </div>
-          
         </div>
         <div className="flex flex-col md:gap-4 items-center  py-6 md:pt-12 md:pb-16 mt-10 bg-slate-200 w-[90vw] rounded-xl mb-10 ">
-          <h1 className="border-b-2 border-blue-500 text-3xl font-semibold py-1 text-black md:mb-5">Developers</h1>
+          <h1 className="border-b-2 border-blue-500 text-3xl font-semibold py-1 text-black md:mb-5">
+            Developers
+          </h1>
           <div className="flex justify-center gap-14 md:gap-10 max-md:flex-col max-md:scale-75">
             <div className="flex items-center gap-2 bg-slate-100 rounded-xl shadow-lg shadow-black/30">
-              <img src={pic1} className="w-[200px] rounded-l-xl" />
+              <img
+                src={pic1}
+                className="w-[200px] rounded-l-xl max-md:w-[175px]"
+              />
               <div className="px-4">
                 <h1 className="text-3xl max-md:text-xl font-bold">
                   Shefaoudeen Z
@@ -49,7 +55,10 @@ const Credits = () => {
               </div>
             </div>
             <div className="flex items-center shadow-lg shadow-black/30 gap-2 bg-slate-100 rounded-xl">
-              <img src={pic1} className="w-[200px] rounded-l-xl" />
+              <img
+                src={pic1}
+                className="w-[200px] rounded-l-xl max-md:w-[175px]"
+              />
               <div className="px-4">
                 <h1 className="text-3xl font-bold max-md:text-xl">
                   Pradheep raj S
