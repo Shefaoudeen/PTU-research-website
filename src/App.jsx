@@ -27,6 +27,7 @@ import EEE from "./Pages/Dept-ResearchArea/EEE";
 import ScrollToTop from "./Layout/ScrollToTop";
 import PageNotFound from "./Pages/PageNotFound";
 import Credits from "./Pages/Credits";
+import Project1 from "./Pages/Projects1";
 
 export default function App() {
   return (
@@ -54,7 +55,7 @@ export default function App() {
           <Route path="/supervisors" element={<Supervisors1 />} />
           <Route path="/researchGrants" element={<ResGrants />} />
           <Route path="/scholarsCentre" element={<Scholars />} />
-          <Route path="/projects" element={<Project />} />
+          <Route path="/projects" element={<Project1 />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/fees" element={<Fees />} />
           <Route path="/journals" element={<Journals />} />

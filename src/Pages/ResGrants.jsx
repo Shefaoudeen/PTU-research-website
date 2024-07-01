@@ -38,7 +38,13 @@ const ResGrants = () => {
         Research grants received from Departments, PTU (in Lakhs)
       </h1>
       <div className="h-[60vh] md:h-[90vh] w-[95vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
-        <div className="h-full w-[80%] mx-auto">
+        <div className="h-full w-[80%] mx-auto relative">
+          <div className="absolute top-[45%] -rotate-90 text-xl font-bold">
+            Lakhs
+          </div>
+          <div className="absolute -bottom-5 left-[45%]  text-xl font-bold">
+            Departments
+          </div>
           <ResponsiveContainer width="100%" height="100%" ref={barChartRef}>
             <BarChart
               width={1000}
