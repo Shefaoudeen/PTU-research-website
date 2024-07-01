@@ -12,7 +12,6 @@ import { barchartData } from "../Data/Scholars";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Scholars_Details } from "../Data/Scholars_details";
-import arrowIcon from "../assets/icons/arrow-icon.svg";
 import { Arrow } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -64,10 +63,6 @@ const Scholars = () => {
                 bottom: 5,
               }}
             >
-              {/* <text x={350} y={15} fontWeight="bold" fontSize="20">
-                No. of Ph.Ds awarded for last 10 years
-              </text> */}
-
               {/* renders the bars only when the bars are in view */}
               {barChartVisible ? (
                 <Bar
@@ -102,11 +97,11 @@ const Scholars = () => {
               } transition-all duration-200`}
             />
           </div>
-          <div className="pl-5">
+          <div className="">
             <ul
               className={`${
                 openButton ? "visible" : "hidden"
-              } cursor-pointer flex flex-col gap-1 duration-200 ease-linear transition-all py-3`}
+              } cursor-pointer flex flex-col gap-1 items-center duration-200 ease-linear transition-all py-3`}
             >
               <li onClick={() => changeYear(0)} className="hover:font-bold ">
                 2020-21
@@ -123,7 +118,8 @@ const Scholars = () => {
             </ul>
           </div>
         </div>
-        <div className="text-center text-2xl py-5 text-blue-500 font-bold max-md:pt-12">
+        <div className="text-center text-2xl py-5 text-blue-500 font-bold max-md:pt-12 px-4">
+          Ph.D. Admission list for <br></br>
           {Scholars_Details[year].year} - {Scholars_Details[year].year + 1}{" "}
           Batch
         </div>
