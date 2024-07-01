@@ -10,7 +10,7 @@ const Home = () => {
         additional={"Puducherry- 605014"}
       />
       <div className="flex flex-col items-center w-full overflow-hidden">
-        <h1 className="w-[80vw] text-3xl md:text-4xl px-4 py-8 text-center">
+        <h1 className="w-[80vw] text-2xl sm:text-3xl md:text-4xl px-4 py-8 text-center">
           Warm Welcome to the Directorate of Academic Research
         </h1>
         <div className=" bg-slate-100 flex justify-center flex-col items-center py-6 w-full max-md:px-5 max-md:text-md">

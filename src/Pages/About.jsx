@@ -11,12 +11,12 @@ const About = () => {
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
-      <div className="flex justify-center items-center px-5 py-10 max-md:flex-col">
+      <div className="flex justify-center items-center gap-2 px-5 py-10 max-md:flex-col">
         <div className="md:min-w-[650px] max-md:w-[80%] flex flex-col justify-center items-start">
           <img
             src={PTU1}
             alt="PTU - PHOTO"
-            className="rounded-2xl shadow-2xl shadow-black/50"
+            className="rounded-2xl shadow-lg md:shadow-2xl shadow-black/50"
           />
         </div>
         <div className="md:px-10">

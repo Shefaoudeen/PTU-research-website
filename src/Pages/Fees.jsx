@@ -8,7 +8,7 @@ const Fees = () => {
       {" "}
       <Banner
         title={"Directorate of Academic Research"}
-        desc={"Fees particular"}
+        desc={"Fees particulars"}
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
@@ -36,7 +36,7 @@ const Fees = () => {
                     <h2>I Year</h2>
                     <h2 className="font-semibold">Rs.{ele.year1}</h2>
                   </div>
-                  <div className="flex gap-20 justify-between py-4">
+                  <div className="flex gap-20 justify-between py-4 items-center">
                     <h2>II Year onwards</h2>
                     <h2 className="font-semibold">Rs.{ele.fromYear2}</h2>
                   </div>
