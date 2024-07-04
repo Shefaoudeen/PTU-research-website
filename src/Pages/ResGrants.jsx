@@ -34,11 +34,11 @@ const ResGrants = () => {
         desc_style={"font-bold text-4xl"}
         additional={""}
       />
-      <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-12">
+      <h1 className="mx-auto text-center text-2xl font-semibold my-12 px-12 max-md:text-xl">
         Research grants received from Departments, PTU (in Lakhs)
       </h1>
       <div className="h-[60vh] md:h-[90vh] w-[95vw] sm:w-[80vw] py-10 md:p-20 mx-auto">
-        <div className="h-full w-[80%] mx-auto relative">
+        <div className="h-full w-[80%] max-md:w-[90%] mx-auto relative">
           <div className="absolute top-[45%] -rotate-90 text-xl font-bold">
             Lakhs
           </div>

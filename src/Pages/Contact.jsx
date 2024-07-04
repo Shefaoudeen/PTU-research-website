@@ -12,7 +12,9 @@ const Contact = () => {
         additional={""}
       />
       <div className="mt-5">
-        <h1 className="text-3xl mx-auto font-semibold py-1 w-fit border-b-[3px] border-blue-400">Contact Us</h1>
+        <h1 className="text-3xl mx-auto font-semibold py-1 w-fit border-b-[3px] border-blue-400">
+          Contact Us
+        </h1>
         {contact_Details.map((faculty, index) => {
           return (
             <div
@@ -33,9 +35,7 @@ const Contact = () => {
                 <h1 className="text-xl sm:text-2xl p-1">
                   {faculty.designation},
                 </h1>
-                <h1 className="text-xl sm:text-2xl p-1">
-                  {faculty.clgName}.
-                </h1>
+                <h1 className="text-xl sm:text-2xl p-1">{faculty.clgName}.</h1>
                 <h1 className={`text-xl sm:text-2xl p-1`}>
                   {faculty.email && `Email : ${faculty.email}`}
                 </h1>

@@ -61,7 +61,9 @@ const Project1 = () => {
                 return (
                   <li
                     onClick={() => changeDept(index)}
-                    className="hover:font-bold "
+                    className={`hover:font-bold ${
+                      index === Dept ? "font-bold" : null
+                    }`}
                   >
                     {ele.dept}
                   </li>

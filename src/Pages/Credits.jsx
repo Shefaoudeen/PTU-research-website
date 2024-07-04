@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Layout/Banner";
-import { DC_Logo, Github, Linkedin, pic1 } from "../assets";
+import { DC_Logo, Github, Linkedin, Shefa, pic1 } from "../assets";
+import { Pradheep } from "../assets";
 
 const Credits = () => {
   return (
@@ -30,7 +31,7 @@ const Credits = () => {
           <div className="flex justify-center gap-14 md:gap-10 max-md:flex-col max-md:scale-75">
             <div className="flex items-center gap-2 bg-slate-100 rounded-xl shadow-lg shadow-black/30">
               <img
-                src={pic1}
+                src={Shefa}
                 className="w-[200px] rounded-l-xl max-md:w-[175px]"
               />
               <div className="px-4">
@@ -56,7 +57,7 @@ const Credits = () => {
             </div>
             <div className="flex items-center shadow-lg shadow-black/30 gap-2 bg-slate-100 rounded-xl">
               <img
-                src={pic1}
+                src={Pradheep}
                 className="w-[200px] rounded-l-xl max-md:w-[175px]"
               />
               <div className="px-4">
