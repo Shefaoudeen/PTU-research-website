@@ -34,6 +34,22 @@ const About = () => {
               www.ptuniv.edu
             </a>
           </p>
+          <p className="text-xl mt-5 leading-8 max-md:text-lg text-justify">
+            The institution was upgraded to the status of Technological
+            University with the approval of UGC with effect from 5th September,
+            2020 and was renamed as Puducherry Technological University (PTU).
+            This marked an important milestone in the evolution of this
+            institution. Therefore Admission to the Ph. D programmes are
+            directly undertaken by PTU with effect from the
+            academic year 2021-22.
+          </p>
+          <p className="text-xl mt-5 leading-8 max-md:text-lg text-justify">
+            The institute became QIP(Quality Improvement Programme) Minor
+            research centre from 2013 . University offers admission to Ph.D
+            programme under QIP programme, and NDF( National Doctoral
+            Fellowship) , ADF ( AICTE Doctoral Fellowship) , Visveswaraya Scheme
+            and visveswaraya scheme
+          </p>
         </div>
       </div>
     </div>

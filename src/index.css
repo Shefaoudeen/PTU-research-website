@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    font-weight: 400;
+.active {
+  font-weight: 400;
 }

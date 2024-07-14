@@ -44,7 +44,7 @@ const Civil = () => {
               <ol className="list-decimal flex flex-col gap-1.5">
                 {Civil_details.materialTesting1.map((ele) => {
                   return (
-                    <li className="font-normal">
+                    <li className="font-normal ">
                       <p>{ele}</p>
                     </li>
                   );

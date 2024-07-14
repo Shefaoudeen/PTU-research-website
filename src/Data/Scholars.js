@@ -1,7 +1,7 @@
 const barchartData = [
   {
     name: "2013-14",
-    scholars: "25",
+    scholars: "20",
   },
   {
     name: "2014-15",
@@ -9,7 +9,7 @@ const barchartData = [
   },
   {
     name: "2015-16",
-    scholars: "33",
+    scholars: "35",
   },
   {
     name: "2016-17",
@@ -29,15 +29,19 @@ const barchartData = [
   },
   {
     name: "2020-21",
-    scholars: "48",
+    scholars: "76",
   },
   {
     name: "2021-22",
-    scholars: "43",
+    scholars: "40",
   },
   {
     name: "2022-23",
-    scholars: "45",
+    scholars: "51",
+  },
+  {
+    name: "2023-24",
+    scholars: "44",
   },
 ];
 
