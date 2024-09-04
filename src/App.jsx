@@ -5,7 +5,6 @@ import About from "./Pages/About";
 import ResAreas from "./Pages/ResAreas";
 import Supervisors1 from "./Pages/Supervisors1";
 import ResGrants from "./Pages/ResGrants";
-import Project from "./Pages/Project";
 import Scholars from "./Pages/Scholars";
 import Policy from "./Pages/Policy";
 import Fees from "./Pages/Fees";
@@ -28,6 +27,7 @@ import ScrollToTop from "./Layout/ScrollToTop";
 import PageNotFound from "./Pages/PageNotFound";
 import Credits from "./Pages/Credits";
 import Project1 from "./Pages/Projects1";
+import Cms from "./CMS/Cms";
 
 export default function App() {
   return (

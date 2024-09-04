@@ -9,6 +9,7 @@ import Ptu_logo from "./Images/ptu-logo.png";
 import Pradheep from "./Images/pradheep.jpg";
 import Shefa from "./Images/shefa.jpg";
 import Ramesh_sir from "./Images/ramesh.jpg";
+import PTU2 from "./Images/ptu-2.jpg";
 
 export {
   PTU1,
@@ -22,4 +23,5 @@ export {
   Pradheep,
   Shefa,
   Ramesh_sir,
+  PTU2,
 };

@@ -57,6 +57,74 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <div className="flex py-10">
+          <div className="w-1/2 max-md:w-full">
+            <div className="px-10">
+              <div className="bg-[#343a40] py-2 text-white text-2xl text-center font-bold rounded-t-2xl">
+                <h1>Latest News</h1>
+              </div>
+              <div className="border border-[#343a40] p-5 flex flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl">
+                <div className="border-b-2 border-[#343a40] pb-2.5">
+                  <h1 className="font-bold text-2xl pb-1">Heading 1</h1>
+                  <h1 className="text-lg py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum dolorem ex libero deserunt veritatis incidunt iure?
+                    Aliquid, est, dicta repellat at facere laudantium
+                    consectetur repudiandae dolor, assumenda a nulla vel?
+                  </h1>
+                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
+                    Know More
+                  </button>
+                </div>
+                <div className="border-b-2 border-[#343a40] pb-2.5">
+                  <h1 className="font-bold text-2xl pb-1">Heading 2</h1>
+                  <h1 className="text-lg py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum dolorem ex libero deserunt veritatis incidunt iure?
+                    Aliquid, est, dicta repellat at facere laudantium
+                    consectetur repudiandae dolor, assumenda a nulla vel?
+                  </h1>
+                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 max-md:w-full">
+            <div className="px-10">
+              <div className="bg-[#343a40] py-2 text-white text-2xl text-center font-bold rounded-t-2xl">
+                <h1>Upcoming Events</h1>
+              </div>
+              <div className="border border-[#343a40] p-5 flex flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl">
+                <div className="border-b-2 border-[#343a40] pb-2.5">
+                  <h1 className="font-bold text-2xl pb-1">Heading 1</h1>
+                  <h1 className="text-lg py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum dolorem ex libero deserunt veritatis incidunt iure?
+                    Aliquid, est, dicta repellat at facere laudantium
+                    consectetur repudiandae dolor, assumenda a nulla vel?
+                  </h1>
+                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
+                    Know More
+                  </button>
+                </div>
+                <div className="border-b-2 border-[#343a40] pb-2.5">
+                  <h1 className="font-bold text-2xl pb-1">Heading 2</h1>
+                  <h1 className="text-lg py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum dolorem ex libero deserunt veritatis incidunt iure?
+                    Aliquid, est, dicta repellat at facere laudantium
+                    consectetur repudiandae dolor, assumenda a nulla vel?
+                  </h1>
+                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
