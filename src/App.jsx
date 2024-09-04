@@ -63,6 +63,7 @@ export default function App() {
           <Route path="/downloads" element={<Download />} />
           <Route path="/contactUs" element={<Contact />} />
           <Route path="/credits" element={<Credits />} />
+          <Route path=".cms" element={<Cms />} />
         </Route>
       </Routes>
     </BrowserRouter>
