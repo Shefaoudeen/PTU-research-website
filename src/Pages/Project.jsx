@@ -55,10 +55,10 @@ const Project = () => {
                       {ele.Department}
                     </h1>
                   </div>
-                  <h1 className="max-md:hidden">{ele.Funding}</h1>
-                  <h1 className="md:hidden">{ele.Funding}</h1>
-                  <h1 className="md:hidden">Total Fund : {ele.Funds}</h1>
-                  <h1 className="md:hidden">Duration : {ele.duration}</h1>
+                  <h1 className="">{ele.Funding}</h1>
+                  <h1 className="">{ele.Funding}</h1>
+                  <h1 className="">Total Fund : {ele.Funds}</h1>
+                  <h1 className="">Duration : {ele.duration}</h1>
                   <div
                     className="text-lg text-slate-600 cursor-pointer font-bold absolute bottom-4 right-4 max-md:hidden"
                     onClick={() => handleClick(index)}

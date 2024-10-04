@@ -25,13 +25,15 @@ const Contact = () => {
                 <img
                   src={faculty.profile}
                   alt="profile picture"
-                  className="w-44 sm:w-52 rounded-full"
+                  className="max-w-[175px] max-h-[175px] sm:w-52 rounded-full object-cover"
                 />
               </div>
               <div className={`pr-8 text-${faculty.textColor}`}>
-                <h1 className="text-xl sm:text-2xl p-1 font-semibold">
-                  {faculty.name}
-                </h1>
+                <a href={faculty.link} target="_blank">
+                  <h1 className="text-xl sm:text-2xl p-1 font-semibold hover:underline">
+                    {faculty.name}
+                  </h1>
+                </a>
                 <h1 className="text-xl sm:text-2xl p-1">
                   {faculty.designation},
                 </h1>

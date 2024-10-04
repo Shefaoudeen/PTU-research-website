@@ -10,6 +10,12 @@ import Pradheep from "./Images/pradheep.jpg";
 import Shefa from "./Images/shefa.jpg";
 import Ramesh_sir from "./Images/ramesh.jpg";
 import PTU2 from "./Images/ptu-2.jpg";
+import Admission_from from "./Images/docs-thumbnails/admission_form.png";
+import Selection_list from "./Images/docs-thumbnails/student_list.png";
+import Prospectus from "./Images/docs-thumbnails/prospectus.png";
+import Regulation from "./Images/docs-thumbnails/phd_regulation.png";
+import Sandanalakshmi_mam from "./Images/sandanaLakshmi.jpg";
+import LP_sir from "./Images/lp.png";
 
 export {
   PTU1,
@@ -24,4 +30,10 @@ export {
   Shefa,
   Ramesh_sir,
   PTU2,
+  Admission_from,
+  Selection_list,
+  Prospectus,
+  Sandanalakshmi_mam,
+  Regulation,
+  LP_sir,
 };

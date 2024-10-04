@@ -8,6 +8,10 @@ const Navbar_content = [
     link: "/aboutUs",
   },
   {
+    title: "Admission",
+    link: "/admission",
+  },
+  {
     title: "Research Areas",
     link: "/researchAreas",
   },

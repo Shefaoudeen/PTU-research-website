@@ -28,6 +28,10 @@ import PageNotFound from "./Pages/PageNotFound";
 import Credits from "./Pages/Credits";
 import Project1 from "./Pages/Projects1";
 import Cms from "./CMS/Cms";
+import Notice from "./CMS/Notice";
+import CreateNotice from "./CMS/CreateNotice";
+import EditNotice from "./CMS/EditNotice";
+import Admission from "./Pages/Admission";
 
 export default function App() {
   return (
@@ -38,6 +42,7 @@ export default function App() {
           <Route path="*" element={<PageNotFound />} />
           <Route index element={<Home />} />
           <Route path="/aboutUs" element={<About />} />
+          <Route path="/admission" element={<Admission />} />
           <Route path="/researchAreas">
             <Route index element={<ResAreas />} />
             <Route path="civil" element={<Civil />} />
@@ -63,7 +68,12 @@ export default function App() {
           <Route path="/downloads" element={<Download />} />
           <Route path="/contactUs" element={<Contact />} />
           <Route path="/credits" element={<Credits />} />
-          <Route path="/cms" element={<Cms />} />
+          <Route path="/cms">
+            <Route index element={<Cms />} />
+            <Route path="notice" element={<Notice />} />
+            <Route path="notice/add" element={<CreateNotice />} />
+            <Route path="notice/edit/:id" element={<EditNotice />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

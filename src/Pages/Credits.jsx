@@ -65,7 +65,7 @@ const Credits = () => {
                   Pradheep raj S
                 </h1>
                 <h1 className="text-[#298892] text-xl font-bold ">
-                  Development Unit Secretary
+                  Prime Unit President
                 </h1>
                 <h1 className="font-bold">CSE'26</h1>
                 <div className="flex w-full justify-around pt-4">

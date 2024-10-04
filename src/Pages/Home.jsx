@@ -1,7 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../Layout/Banner";
+import axios from "axios";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Home = () => {
+  const [allNotice, setAllNotice] = useState([]);
+
+  let elHeight;
+
+  useEffect(() => {
+    axios
+      .get("https://research-server-k9vc.onrender.com/notice")
+      .then((res) => {
+        setAllNotice(res.data);
+        console.log(allNotice);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    elHeight = document.getElementById("updateContainer").clientHeight;
+    console.log(elHeight);
+    if (elHeight > 398) {
+      gsap.to(".updates", {
+        translateY: -1 * elHeight + 100,
+        duration: 20,
+        repeat: -1,
+        scrambleText: {
+          ScrollTrigger: "#updateContainer",
+          start: "0px top",
+        },
+      });
+    }
+  }, []);
+
   return (
     <>
       <Banner
@@ -13,7 +51,10 @@ const Home = () => {
         <h1 className="w-[80vw] text-2xl sm:text-3xl md:text-4xl px-4 py-8 text-center">
           Warm Welcome to the Directorate of Academic Research
         </h1>
-        <div className=" bg-slate-100 flex justify-center flex-col items-center py-6 w-full max-md:px-5 max-md:text-md">
+        <div
+          id="info"
+          className="  flex justify-center flex-col items-center py-6 w-full max-md:px-5 max-md:text-md"
+        >
           <div className="flex md:flex-row flex-col items-start justify-between  md:w-[75vw]">
             <h2 className="font-bold text-3xl  min-w-40 p-2 max-md:text-xl">
               VISION:
@@ -57,70 +98,36 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="flex py-10">
-          <div className="w-1/2 max-md:w-full">
-            <div className="px-10">
-              <div className="bg-[#343a40] py-2 text-white text-2xl text-center font-bold rounded-t-2xl">
-                <h1>Latest News</h1>
+        <div className="flex py-10 w-full items-center justify-center">
+          <div className="w-[80%]">
+            <div className="md:px-10">
+              <div className="bg-[#343a40] w-full py-2 max-md:px-10 text-white text-2xl text-center font-bold rounded-t-2xl">
+                <h1>Ph.D Notifications</h1>
               </div>
-              <div className="border border-[#343a40] p-5 flex flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl">
-                <div className="border-b-2 border-[#343a40] pb-2.5">
-                  <h1 className="font-bold text-2xl pb-1">Heading 1</h1>
-                  <h1 className="text-lg py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum dolorem ex libero deserunt veritatis incidunt iure?
-                    Aliquid, est, dicta repellat at facere laudantium
-                    consectetur repudiandae dolor, assumenda a nulla vel?
-                  </h1>
-                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
-                    Know More
-                  </button>
-                </div>
-                <div className="border-b-2 border-[#343a40] pb-2.5">
-                  <h1 className="font-bold text-2xl pb-1">Heading 2</h1>
-                  <h1 className="text-lg py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum dolorem ex libero deserunt veritatis incidunt iure?
-                    Aliquid, est, dicta repellat at facere laudantium
-                    consectetur repudiandae dolor, assumenda a nulla vel?
-                  </h1>
-                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
-                    Know More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-1/2 max-md:w-full">
-            <div className="px-10">
-              <div className="bg-[#343a40] py-2 text-white text-2xl text-center font-bold rounded-t-2xl">
-                <h1>Upcoming Events</h1>
-              </div>
-              <div className="border border-[#343a40] p-5 flex flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl">
-                <div className="border-b-2 border-[#343a40] pb-2.5">
-                  <h1 className="font-bold text-2xl pb-1">Heading 1</h1>
-                  <h1 className="text-lg py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum dolorem ex libero deserunt veritatis incidunt iure?
-                    Aliquid, est, dicta repellat at facere laudantium
-                    consectetur repudiandae dolor, assumenda a nulla vel?
-                  </h1>
-                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
-                    Know More
-                  </button>
-                </div>
-                <div className="border-b-2 border-[#343a40] pb-2.5">
-                  <h1 className="font-bold text-2xl pb-1">Heading 2</h1>
-                  <h1 className="text-lg py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum dolorem ex libero deserunt veritatis incidunt iure?
-                    Aliquid, est, dicta repellat at facere laudantium
-                    consectetur repudiandae dolor, assumenda a nulla vel?
-                  </h1>
-                  <button className="bg-[#fd7e14] px-5 py-2 text-lg text-white rounded-lg font-bold pb-3">
-                    Know More
-                  </button>
-                </div>
+
+              <div
+                className="border border-[#343a40] p-5 flex flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl"
+                id="updateContainer"
+              >
+                {allNotice.map((ele, index) => {
+                  return (
+                    <div key={index} className="updates">
+                      <div className="border-b-2 border-[#343a40] pb-2.5">
+                        <h1 className="font-bold md:text-2xl pb-1">
+                          {ele?.title}
+                        </h1>
+                        <h1 className="md:text-lg py-3">{ele?.description}</h1>
+                        {ele.link === "" ? null : (
+                          <a href={ele?.link} target="_blank">
+                            <button className="bg-[#fd7e14] px-5 py-2 md:text-lg text-white rounded-lg font-bold pb-3">
+                              Know More
+                            </button>
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
