@@ -18,8 +18,8 @@ const Navbar = () => {
     return () => {
       gsap.set("#sideBar", {
         x: 0,
-      })
-    }
+      });
+    };
   }, [sidebarOpen]);
   return (
     <>
@@ -28,11 +28,11 @@ const Navbar = () => {
           <div>
             <img src={Ptu_logo} className="w-7 py-0.5 md:w-[40px]" />
           </div>
-          <div  //hamburger icon
+          <div //hamburger icon
             className="py-2 md:hidden flex flex-col justify-center items-center cursor-pointer duration-300 "
             onClick={() => setSidebarOpen(!sidebarOpen)}
           >
-          {/* hamburger icon animationDuration */}
+            {/* hamburger icon animationDuration */}
             <div
               className={`w-7 h-1 my-0.5 bg-gray-500 rounded transition-transform duration-300 ${
                 sidebarOpen ? "rotate-[135deg] translate-y-1.5" : ""
@@ -74,14 +74,14 @@ const Navbar = () => {
                 ></img>
               </div>
             </div>
-            <div  //more menu bar
+            <div //more menu bar
               onMouseOver={() => setMoreOpen(true)}
               onMouseLeave={() => setMoreOpen(false)}
               className={`shadow-[0px_-12px_20px_-11px_rgba(0,0,0,0.46)] absolute rounded right-10 top-12 py-4 px-12 bg-white items-center flex-col  ${
                 moreOpen ? "flex" : "hidden"
               }`}
-            > 
-            {/* more menus */}
+            >
+              {/* more menus */}
               {Navbar_more.map((item, i) => {
                 return (
                   <NavLink to={item.link} key={i}>
@@ -101,7 +101,7 @@ const Navbar = () => {
         id="sideBar"
         className={`${
           sidebarOpen ? "flex " : "hidden"
-        } fixed z-[100] flex-col pl-5 sm:pl-10 py-4 top-10 right-0 bg-white/75 backdrop-blur-sm w-[50vw] font-light shadow-lg h-screen`}
+        } fixed z-[100] text-sm flex-col pl-5 sm:pl-10 py-4 pb-20 top-10 right-0 bg-white/75 backdrop-blur-sm w-[50vw] font-light shadow-lg h-screen`}
       >
         {Navbar_content.map((ele, index) => {
           return (
@@ -121,7 +121,11 @@ const Navbar = () => {
         })}
         {Navbar_more.map((item, i) => {
           return (
-            <NavLink to={item.link} key={i} onClick={() => setSidebarOpen(false)}>
+            <NavLink
+              to={item.link}
+              key={i}
+              onClick={() => setSidebarOpen(false)}
+            >
               <button
                 id="links"
                 className="px-4 py-3 hover:scale-110  transition-all duration-300"

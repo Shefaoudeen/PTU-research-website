@@ -25,7 +25,7 @@ const Contact = () => {
                 <img
                   src={faculty.profile}
                   alt="profile picture"
-                  className="max-w-[175px] max-h-[175px] sm:w-52 rounded-full object-cover"
+                  className="max-w-[175px] min-h-[175px] min-w-[175px] max-h-[175px] sm:w-52 rounded-full object-cover"
                 />
               </div>
               <div className={`pr-8 text-${faculty.textColor}`}>
