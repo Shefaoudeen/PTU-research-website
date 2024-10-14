@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://research-server-k9vc.onrender.com/notice")
+      .get("https://research-server-production.up.railway.app/notice")
       .then((res) => {
         setAllNotice(res.data);
         console.log(allNotice);
@@ -106,31 +106,28 @@ const Home = () => {
               </div>
 
               <div
-                className="border border-[#343a40] p-5 flex justify-center items-center flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl"
+                className="border border-[#343a40] p-5 flex  flex-col gap-5 h-[400px] overflow-y-auto rounded-b-2xl"
                 id="updateContainer"
               >
-                {/*{allNotice.map((ele, index) => {
+                {allNotice.map((ele, index) => {
                   return (
-                <div key={index} className="updates">
-                  <div className="border-b-2 border-[#343a40] pb-2.5">
-                    <h1 className="font-bold md:text-2xl pb-1">{ele?.title}</h1>
-                    <h1 className="md:text-lg py-3">{ele?.description}</h1>
-                    {ele.link === "" ? null : (
-                      <a href={ele?.link} target="_blank">
-                        <button className="bg-[#fd7e14] px-5 py-2 md:text-lg text-white rounded-lg font-bold pb-3">
-                          Know More
-                        </button>
-                      </a>
-                    )}
-                  </div>
-                </div>
-
+                    <div key={index} className="updates">
+                      <div className="border-b-2 border-[#343a40] pb-2.5">
+                        <h1 className="font-bold md:text-2xl pb-1">
+                          {ele?.title}
+                        </h1>
+                        <h1 className="md:text-lg py-3">{ele?.description}</h1>
+                        {ele.link === "" ? null : (
+                          <a href={ele?.link} target="_blank">
+                            <button className="bg-[#fd7e14] px-5 py-2 md:text-lg text-white rounded-lg font-bold pb-3">
+                              Know More
+                            </button>
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   );
                 })}
-                */}
-                <div>
-                  <h1 className="text-3xl font-bold">No New Updates</h1>
-                </div>
               </div>
             </div>
           </div>

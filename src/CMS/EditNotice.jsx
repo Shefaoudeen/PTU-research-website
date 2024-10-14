@@ -11,7 +11,7 @@ const EditNotice = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/notice/${id}`)
+      .get(`https://research-server-production.up.railway.app/notice/${id}`)
       .then((res) => {
         setTitle(res.data.title);
         setDescription(res.data.description);
@@ -29,7 +29,7 @@ const EditNotice = () => {
     };
     axios
       .post(
-        `https://research-server-k9vc.onrender.com/notice/update/${id}`,
+        `https://research-server-production.up.railway.app/notice/update/${id}`,
         edited
       )
       .then(() => console.log("Editted successfully"))

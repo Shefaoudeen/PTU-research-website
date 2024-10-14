@@ -15,7 +15,7 @@ const Notice = (props) => {
 
     if (isAdmin) {
       axios
-        .get("https://research-server-k9vc.onrender.com/notice")
+        .get("https://research-server-production.up.railway.app/notice")
         .then((res) => {
           setAllNotice(res.data);
         })
@@ -27,7 +27,9 @@ const Notice = (props) => {
 
   const handleDelete = () => {
     axios
-      .delete(`https://research-server-k9vc.onrender.com/notice/${deletedId}`)
+      .delete(
+        `https://research-server-production.up.railway.app/notice/${deletedId}`
+      )
       .then(() => {
         console.log("Deleted Successfully");
         setdeletePage(false).catch((err) => console.log(err));
