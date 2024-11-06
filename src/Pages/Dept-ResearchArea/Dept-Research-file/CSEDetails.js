@@ -13,11 +13,11 @@ const CSE_Details = {
     },
     {
       lab: `Distributed Computing Lab:`,
-      descript: `This lab houses specialized hardware for deep learning tasks, including GPUs and TPUs, enabling researchers to develop advanced machine learning algorithms and systems. Research in natural language processing, computer vision, and reinforcement learning thrives in this environment.`,
+      descript: `This lab is a cornerstone of the Department of Computer Science and Engineering, facilitating research and experimentation in the field of distributed systems. Equipped with high-performance servers, clusters, and networking infrastructure, this lab provides students and researchers with the necessary resources to explore the complexities of distributed computing.`,
     },
     {
       lab: `Artificial Intelligence and Data Science Lab:`,
-      descript: `4 GHz Vector Network analyser, MIC components, NIR spectrometer, Bio impedance analyser, 6.5 GHz Vector network analyser with spectrum monitoring, Wireless Sensor Network, and Simpleware imaging software are available for research scholars.`,
+      descript: `This lab houses specialized hardware for deep learning tasks, including GPUs and TPUs, enabling researchers to develop advanced machine learning algorithms and systems. Research in natural language processing, computer vision, and reinforcement learning thrives in this environment.`,
     },
     {
       lab: `Information Security Lab:`,

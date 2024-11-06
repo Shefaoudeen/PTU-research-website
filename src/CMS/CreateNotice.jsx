@@ -19,7 +19,7 @@ const CreateNotice = () => {
       };
 
       axios
-        .post("https://research-server-k9vc.onrender.com/notice/add", newNotice)
+        .post("https://research-server-production.up.railway.app/notice/add", newNotice)
         .then(() => {
           console.log("Added successfully");
           navigate("/cms");
