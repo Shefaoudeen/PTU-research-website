@@ -27,9 +27,9 @@ const Home = () => {
   useGSAP(() => {
     elHeight = document.getElementById("updateContainer").clientHeight;
     console.log(elHeight);
-    if (elHeight > 398) {
+    if (elHeight >= 398) {
       gsap.to(".updates", {
-        translateY: -1 * elHeight + 100,
+        translateY: -1 * elHeight - 300,
         duration: 20,
         repeat: -1,
         scrambleText: {

@@ -16,6 +16,26 @@ const Fees = () => {
         <h1 className="text-3xl text-center mt-10 p-1 text-blue-800 font-semibold">
           Fee Structure for Ph.D Scholars
         </h1>
+        <div className="flex flex-col justify-center  items-center ">
+          <div className="w-[75%] max-md:w-[90%] flex flex-col justify-center gap-5 items-center text-justify  py-5">
+            <h1>Click here to pay the Academic Fees</h1>
+            <a
+              href="https://payments.billdesk.com/bdcollect/bd/ptu/13800"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-600 hover:bg-blue-800 transition-all ease-linear px-5 py-2 rounded-full text-white">
+                Pay Now
+              </button>
+            </a>
+            <h1>
+              <strong>Note : </strong>After paying the fee, get sign and seal of
+              the bank officials in the receipt, verify with AR(Academic),
+              Submit one copy to academic section and one copy to DAR for filing
+              in the personal file.
+            </h1>
+          </div>
+        </div>
         <div className="mt-10 py-4 px-2 sm:px-10 md:px-20 lg:px-32">
           {feeDetails.map((ele, index) => {
             return (
@@ -26,7 +46,9 @@ const Fees = () => {
                 key={index}
               >
                 <div className="flex flex-col items-center gap-5">
-                  <h2 className="text-xl text-center">For Scholars admitted from the academic year</h2>
+                  <h2 className="text-xl text-center">
+                    For Scholars admitted from the academic year
+                  </h2>
                   <h2 className="bg-blue-500 px-4 py-3 rounded-full text-white shadow-md">{`${
                     ele.from
                   } ${ele.to ? "to " + ele.to : ""}`}</h2>
